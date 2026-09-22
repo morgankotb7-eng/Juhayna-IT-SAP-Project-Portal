@@ -158,15 +158,31 @@
   .filter-bar__label { font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--c-inkdim); text-transform:uppercase; letter-spacing:.04em; }
   .filter-chip-group { display:flex; gap:.4rem; flex-wrap:wrap; }
   .filter-chip { font-family:'IBM Plex Mono',monospace; font-size:11px; padding:5px 12px; border-radius:9999px; border:1px solid var(--c-hair2); background:none; color:var(--c-inkdim); cursor:pointer; transition:all 150ms; }
-  .filter-chip:hover { color:#FFFFFF; border-color:var(--c-sky); }
-  .filter-chip[data-active="true"] { background:rgba(51,181,229,0.18); border-color:var(--c-sky); color:#FFFFFF; }
+  .filter-chip:hover { color:#FFFFFF; border-color:#F1C40F; }
+  .filter-chip[data-active="true"] { background:rgba(241,196,15,0.20); border-color:#F1C40F; color:#FFFFFF; box-shadow:0 0 0 1px rgba(241,196,15,0.35), 0 0 16px rgba(241,196,15,0.35); }
   .filter-vendor-select { width:auto; min-width:150px; }
   .filter-clear-btn { margin-inline-start:auto; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--c-inkdim); background:none; border:1px solid var(--c-hair2); padding:5px 12px; border-radius:9999px; cursor:pointer; transition:all 150ms; }
   .filter-clear-btn:hover { color:var(--c-blocked); border-color:var(--c-blocked); }
   .active-filters-row { display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; font-size:11px; color:var(--c-inkdim); margin-bottom:1.5rem; }
-  .active-filter-chip { background:rgba(51,181,229,0.14); color:var(--c-sky); padding:3px 10px; border-radius:9999px; font-family:'IBM Plex Mono',monospace; font-size:10.5px; }
+  .active-filter-chip { background:rgba(241,196,15,0.16); color:#F1C40F; padding:3px 10px; border-radius:9999px; font-family:'IBM Plex Mono',monospace; font-size:10.5px; border:1px solid rgba(241,196,15,0.3); }
   .filter-hint { font-size:11px; color:var(--c-inkdim); margin-bottom:1.5rem; }
   .hbar-row--clickable:hover .hbar-label { color:var(--c-ink); }
+
+  /* ---- Cross-Filter Dashboard card (glassmorphic wrapper) ---- */
+  .filter-card { margin-bottom:.75rem; }
+  .filter-card__header { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:1.25rem; flex-wrap:wrap; }
+  .filter-section { margin-bottom:1.15rem; }
+  .filter-section--last { margin-bottom:0; }
+  .filter-section__label { display:block; font-family:'IBM Plex Mono',monospace; font-size:10px; color:var(--c-inkdim); text-transform:uppercase; letter-spacing:.05em; margin-bottom:.6rem; }
+  .filter-teams-scroll {
+    display:flex; gap:.5rem; overflow-x:auto; padding-bottom:.65rem;
+    scrollbar-width: thin; scrollbar-color: #3D6D9E transparent;
+  }
+  .filter-teams-scroll .filter-chip { flex-shrink:0; }
+  .filter-teams-scroll::-webkit-scrollbar { height:6px; }
+  .filter-teams-scroll::-webkit-scrollbar-track { background:rgba(255,255,255,0.04); border-radius:9999px; }
+  .filter-teams-scroll::-webkit-scrollbar-thumb { background:#3D6D9E; border-radius:9999px; }
+  .filter-teams-scroll::-webkit-scrollbar-thumb:hover { background:#F1C40F; }
 
   /* ---- Upcoming deadlines mini table ---- */
   .deadline-list { display:flex; flex-direction:column; }
@@ -222,6 +238,46 @@
   .team-dist-legend span { display:flex; align-items:center; gap:.35rem; }
   .team-dist-blocker-link { display:block; width:100%; text-align:start; background:none; border:none; padding:.6rem 0 0; margin-top:.25rem; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--c-blocked); cursor:pointer; }
   .team-dist-blocker-link:hover { text-decoration:underline; }
+
+  /* ---- Strategic Roadmap ---- */
+  .roadmap-grid { display:flex; gap:1.25rem; overflow-x:auto; padding-bottom:.5rem; }
+  .roadmap-col { min-width:270px; flex-shrink:0; }
+  .roadmap-col__header { font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:600; color:#F1C40F; letter-spacing:.03em; padding-bottom:.6rem; margin-bottom:.85rem; border-bottom:1px solid rgba(241,196,15,0.25); }
+  .roadmap-col__body { display:flex; flex-direction:column; gap:.75rem; }
+  .roadmap-card { display:block; }
+  .roadmap-card__name { font-size:12.5px; color:var(--c-ink); line-height:1.35; }
+  .roadmap-card__meta { font-size:10.5px; color:var(--c-inkdim); font-family:'IBM Plex Mono',monospace; margin-top:.35rem; }
+  .roadmap-card__range { font-size:10px; color:var(--c-inkdim); font-family:'IBM Plex Mono',monospace; margin-top:.15rem; }
+  .roadmap-legend { display:flex; align-items:center; gap:1.25rem; font-size:11px; color:var(--c-inkdim); margin-bottom:1.25rem; flex-wrap:wrap; }
+  .roadmap-legend span { display:flex; align-items:center; gap:.4rem; }
+
+  /* ---- Asset Catalog ---- */
+  .catalog-list { display:flex; flex-direction:column; gap:1rem; }
+  .catalog-item { border-bottom:1px solid rgba(255,255,255,0.06); padding-bottom:.9rem; }
+  .catalog-item:last-child { border-bottom:none; padding-bottom:0; }
+  .catalog-item__top { display:flex; align-items:flex-start; justify-content:space-between; gap:.75rem; }
+  .catalog-item__name { font-size:12.5px; color:var(--c-ink); line-height:1.35; }
+  .catalog-item__scope { font-size:11px; color:var(--c-inkdim); margin-top:.4rem; line-height:1.5; }
+  .catalog-item__meta { font-size:10.5px; color:var(--c-inkdim); font-family:'IBM Plex Mono',monospace; margin-top:.5rem; }
+
+  /* ---- Presentation Mode ---- */
+  .exit-presentation-btn { display:none; position:fixed; top:18px; inset-inline-end:18px; z-index:60; align-items:center; gap:.5rem; background:rgba(11,25,44,0.9); border:1px solid #F1C40F; color:#F1C40F; font-family:'IBM Plex Mono',monospace; font-size:12px; padding:8px 16px; border-radius:9999px; cursor:pointer; box-shadow:0 8px 24px rgba(0,0,0,0.5); backdrop-filter:blur(8px);
+  }
+  .exit-presentation-btn:hover { background:rgba(241,196,15,0.15); }
+  body.presentation-mode .exit-presentation-btn { display:flex; }
+  body.presentation-mode aside,
+  body.presentation-mode .pulse-bar,
+  body.presentation-mode #exportBriefBtn,
+  body.presentation-mode #presentModeBtn,
+  body.presentation-mode #newProjectBtn,
+  body.presentation-mode #newTeamBtn,
+  body.presentation-mode #newAssetBtn,
+  body.presentation-mode #searchInput,
+  body.presentation-mode .filter-clear-btn,
+  body.presentation-mode #clearRoadmapFilter { display:none !important; }
+  body.presentation-mode main#content { padding:3rem 4rem; }
+  body.presentation-mode #sectionTitle { font-size:1.5rem; }
+  body.presentation-mode .text-\[28px\] { font-size:34px; }
   .donut-total { font-family:'IBM Plex Mono',monospace; font-size:1.4rem; font-weight:600; color:var(--c-ink); line-height:1; }
   .donut-total-label { font-family:'IBM Plex Mono',monospace; font-size:.6rem; color:var(--c-inkdim); margin-top:.25rem; text-transform:uppercase; letter-spacing:.04em; }
   .donut-legend { display:flex; flex-direction:column; gap:.5rem; font-size:.75rem; color:var(--c-inkdim); flex:1; min-width:130px; }
@@ -446,6 +502,7 @@
   .hover\:bg-gold\/25:hover{background-color:rgba(241,196,15,0.25);}
   .hover\:bg-sky\/10:hover{background-color:rgba(51,181,229,0.1);}
   .hover\:border-hair2:hover{border-color:#3D6D9E;}
+  .hover\:border-sky:hover{border-color:#33B5E5;}
   .hover\:text-gold:hover{color:#F1C40F;}
   .hover\:text-ink:hover{color:#FFFFFF;}
   .hover\:underline:hover{text-decoration:underline;}
@@ -557,7 +614,7 @@
     .print-header { padding-bottom:12px; border-bottom:2px solid #000000; }
     .print-header__title { font-family:'Space Grotesk',sans-serif; font-size:20px; font-weight:700; color:#000; }
     .print-header__meta { font-family:'IBM Plex Mono',monospace; font-size:11px; color:#444; margin-top:4px; }
-    .pulse-bar, aside, header, .filter-bar, #modalBackdrop, #newProjectBtn, #newTeamBtn, #exportBriefBtn, .filter-clear-btn, .active-filters-row { display:none !important; }
+    .pulse-bar, aside, header, .filter-bar, #modalBackdrop, #newProjectBtn, #newTeamBtn, #newAssetBtn, #exportBriefBtn, #presentModeBtn, .exit-presentation-btn, .filter-clear-btn, .active-filters-row { display:none !important; }
     body { background:#FFFFFF !important; display:block !important; }
     main#content { padding:0 !important; overflow:visible !important; }
     .bg-panel, .card, .chart-card { background:#FFFFFF !important; backdrop-filter:none !important; -webkit-backdrop-filter:none !important; box-shadow:none !important; border:1px solid #CCCCCC !important; }
@@ -625,6 +682,9 @@
       </div>
       <div class="flex items-center gap-3 shrink-0">
         <input id="searchInput" type="text" placeholder="Search projects, owners, vendors…" class="hidden md:block w-56 bg-elev border border-hair2 text-sm px-3 py-1.5 text-ink placeholder:text-inkdim focus-ring">
+        <button id="presentModeBtn" class="hidden sm:flex items-center gap-1.5 bg-elev border border-hair2 text-inkdim text-[13px] font-mono px-4 py-2 hover:text-ink hover:border-sky transition-colors focus-ring">
+          <span>⛶</span><span>Presentation Mode</span>
+        </button>
         <button id="exportBriefBtn" class="hidden sm:flex items-center gap-1.5 bg-sky/10 border border-sky text-sky text-[13px] font-mono px-4 py-2 hover:bg-sky/10 transition-colors focus-ring">
           <span>⭳</span><span>Export Executive Brief</span>
         </button>
@@ -647,6 +707,10 @@
 </div>
 
 <!-- ============ PROJECT DETAIL / EDIT MODAL ============ -->
+<button id="exitPresentBtn" class="exit-presentation-btn focus-ring">
+  <span>✕</span><span>Exit Presentation</span>
+</button>
+
 <div id="modalBackdrop" class="fixed inset-0 bg-black/65 hidden items-center justify-center z-50 p-4 overflow-y-auto">
   <div id="modalCard" class="bg-panel border border-hair2 w-full max-w-xl settle-in my-6">
     <div class="flex items-start justify-between px-6 py-5 border-b border-hair">
@@ -669,7 +733,12 @@ let TEAMS = [
   { id:'systems',  name:'Systems SW/HW & Cloud', short:'Systems', ownersLabel:'Ismail & Hla', owners:['Ismail','Hla'], focus:'Enterprise servers, Microsoft Intune MDM, Data Domain backup, Huawei Cloud, HA environments', prefix:'SY' },
   { id:'support',  name:'Technical Support & End-User Devices', short:'Support', ownersLabel:'Kotb & Abdelrahman', owners:['Kotb','Abdelrahman'], focus:'1,400+ client devices, HP/Dell/Lenovo lifecycle, Springdell MDM, meeting rooms, IP telephony', prefix:'TS' },
   { id:'sap',      name:'SAP Technical & Basis', short:'SAP', ownersLabel:'Mandour (Basis)', owners:['Mandour'], focus:'SAP Basis admin, SAP SSO, FUE optimization, S/4HANA infra upgrade, EWM support', prefix:'SAP' },
-  { id:'apps',     name:'Application Teams', short:'Applications', ownersLabel:'Application Teams', owners:['App Team'], focus:'Internal platforms, integrations, and business application delivery across departments', prefix:'APP' },
+  { id:'sap-mm',   name:'SAP MM', short:'SAP MM', ownersLabel:'Mansy & Ahmed Abdelaziz', owners:['Mansy','Ahmed Abdelaziz'], focus:'Materials Management — procurement, inventory planning, and vendor master data across plants', prefix:'MM' },
+  { id:'sap-hcm',  name:'SAP HCM', short:'SAP HCM', ownersLabel:'Mohamed Anwar', owners:['Mohamed Anwar'], focus:'Human Capital Management — payroll, employee master data, and organizational management', prefix:'HCM' },
+  { id:'sap-fin',  name:'SAP FIN', short:'SAP FIN', ownersLabel:'Ahmed Elsayed', owners:['Ahmed Elsayed'], focus:'Financials — general ledger, accounts payable/receivable, and statutory reporting', prefix:'FIN' },
+  { id:'sap-abap', name:'SAP ABAP', short:'SAP ABAP', ownersLabel:'Dina Elbadawy & Abdelfattah Samy', owners:['Dina Elbadawy','Abdelfattah Samy'], focus:'Custom ABAP development — reports, interfaces, enhancements, and code quality audits', prefix:'ABAP' },
+  { id:'sap-sac',  name:'SAP SAC', short:'SAP SAC', ownersLabel:'Nancy Elghamry', owners:['Nancy Elghamry'], focus:'SAP Analytics Cloud — planning, forecasting, and executive reporting dashboards', prefix:'SAC' },
+  { id:'apps',     name:'Application Teams', short:'Applications', ownersLabel:'Ramy Raafat, Khaled Mahmoud, Mohamed Rabie, Marwan Ahmed, Amr Alaa & Youssef Mahmoud', owners:['Ramy Raafat','Khaled Mahmoud','Mohamed Rabie','Marwan Ahmed','Amr Alaa','Youssef Mahmoud'], focus:'Internal platforms, integrations, and business application delivery across departments', prefix:'APP' },
 ];
 function teamById(id){ return TEAMS.find(t => t.id === id); }
 
@@ -709,14 +778,53 @@ let PROJECTS = [
   { id:'SAP-03', team:'sap', name:'FUE License Optimization Review', owner:'Mandour', vendor:'SAP Basis', status:'done', progress:100, start:'2026-04-10', end:'2026-06-01', blocker:null, archived:false },
   { id:'SAP-04', team:'sap', name:'EWM Support — Warehouse Process Tuning', owner:'Mandour', vendor:'SAP Basis', status:'pending', progress:0, start:'2026-10-20', end:'2026-12-10', blocker:null, archived:false },
 
-  { id:'APP-01', team:'apps', name:'Factory Floor Portal — Integration Layer', owner:'App Team', vendor:'Other', status:'progress', progress:50, start:'2026-06-15', end:'2026-10-10', blocker:null, archived:false },
-  { id:'APP-02', team:'apps', name:'Vendor Delay Tracking Module', owner:'App Team', vendor:'Other', status:'pending', progress:0, start:'2026-10-01', end:'2026-11-25', blocker:null, archived:false },
-  { id:'APP-03', team:'apps', name:'RBAC Access Review Automation', owner:'App Team', vendor:'Other', status:'done', progress:100, start:'2026-05-01', end:'2026-06-20', blocker:null, archived:false },
+  { id:'MM-01', team:'sap-mm', name:'Procurement Workflow Automation', owner:'Mansy', vendor:'SAP Basis', status:'progress', progress:55, start:'2026-06-01', end:'2026-10-15', blocker:null, archived:false },
+  { id:'MM-02', team:'sap-mm', name:'Inventory Valuation Cleanup — Q4', owner:'Ahmed Abdelaziz', vendor:'SAP Basis', status:'pending', progress:0, start:'2026-10-15', end:'2026-12-20', blocker:null, archived:false },
+  { id:'MM-03', team:'sap-mm', name:'Vendor Master Data Consolidation', owner:'Mansy', vendor:'Other', status:'done', progress:100, start:'2026-03-10', end:'2026-05-15', blocker:null, archived:false },
+
+  { id:'HCM-01', team:'sap-hcm', name:'Payroll System Localization — Egypt Compliance', owner:'Mohamed Anwar', vendor:'SAP Basis', status:'progress', progress:65, start:'2026-05-20', end:'2026-09-30', blocker:null, archived:false },
+  { id:'HCM-02', team:'sap-hcm', name:'Employee Self-Service Portal Rollout', owner:'Mohamed Anwar', vendor:'Other', status:'pending', progress:0, start:'2026-11-01', end:'2027-01-20', blocker:null, archived:false },
+  { id:'HCM-03', team:'sap-hcm', name:'Organizational Management Restructure', owner:'Mohamed Anwar', vendor:'SAP Basis', status:'done', progress:100, start:'2026-04-01', end:'2026-06-10', blocker:null, archived:false },
+
+  { id:'FIN-01', team:'sap-fin', name:'Financial Close Process Automation', owner:'Ahmed Elsayed', vendor:'SAP Basis', status:'progress', progress:40, start:'2026-07-01', end:'2026-11-30', blocker: mkBlocker('SAP Basis vendor patch validation delayed ahead of period-close cutover', ['sap'], '2026-09-02'), archived:false },
+  { id:'FIN-02', team:'sap-fin', name:'Accounts Payable Workflow Digitization', owner:'Ahmed Elsayed', vendor:'Other', status:'pending', progress:0, start:'2026-10-05', end:'2026-12-15', blocker:null, archived:false },
+  { id:'FIN-03', team:'sap-fin', name:'Statutory Reporting Compliance Update', owner:'Ahmed Elsayed', vendor:'SAP Basis', status:'done', progress:100, start:'2026-03-20', end:'2026-05-25', blocker:null, archived:false },
+
+  { id:'ABAP-01', team:'sap-abap', name:'Custom Interface Development — EDI Integration', owner:'Dina Elbadawy', vendor:'SAP Basis', status:'progress', progress:50, start:'2026-06-15', end:'2026-10-25', blocker:null, archived:false },
+  { id:'ABAP-02', team:'sap-abap', name:'Legacy Report Migration to Fiori', owner:'Abdelfattah Samy', vendor:'Other', status:'pending', progress:0, start:'2026-10-10', end:'2027-01-15', blocker:null, archived:false },
+  { id:'ABAP-03', team:'sap-abap', name:'Code Quality & Performance Audit', owner:'Dina Elbadawy', vendor:'SAP Basis', status:'done', progress:100, start:'2026-04-15', end:'2026-05-30', blocker:null, archived:false },
+
+  { id:'SAC-01', team:'sap-sac', name:'Executive Reporting Dashboard Build-Out', owner:'Nancy Elghamry', vendor:'SAP Basis', status:'progress', progress:45, start:'2026-07-15', end:'2026-11-20', blocker:null, archived:false },
+  { id:'SAC-02', team:'sap-sac', name:'Financial Planning & Forecasting Model', owner:'Nancy Elghamry', vendor:'Other', status:'pending', progress:0, start:'2026-11-01', end:'2027-02-10', blocker:null, archived:false },
+  { id:'SAC-03', team:'sap-sac', name:'S/4HANA Live Data Connection Setup', owner:'Nancy Elghamry', vendor:'SAP Basis', status:'done', progress:100, start:'2026-05-05', end:'2026-06-25', blocker:null, archived:false },
+
+  { id:'APP-01', team:'apps', name:'Factory Floor Portal — Integration Layer', owner:'Ramy Raafat', vendor:'Other', status:'progress', progress:50, start:'2026-06-15', end:'2026-10-10', blocker:null, archived:false },
+  { id:'APP-02', team:'apps', name:'Vendor Delay Tracking Module', owner:'Khaled Mahmoud', vendor:'Other', status:'pending', progress:0, start:'2026-10-01', end:'2026-11-25', blocker:null, archived:false },
+  { id:'APP-03', team:'apps', name:'RBAC Access Review Automation', owner:'Mohamed Rabie', vendor:'Other', status:'done', progress:100, start:'2026-05-01', end:'2026-06-20', blocker:null, archived:false },
+];
+
+/* ======================= CATALOG (hardware / software / vendor infrastructure) =======================
+   Every entry here cross-references an already-real project or team fact already in this data model —
+   scope text is descriptive, not a fabricated precise unit count, except "1,400+ devices" which is the
+   same figure already stated in the Support team's own focus description. */
+let CATALOG = [
+  { id:'CAT-01', pillar:'hardware', name:'Client Devices — Laptops & Desktops', vendor:'HP / Dell / Lenovo', scope:'1,400+ devices across 35 branch & manufacturing sites', team:'support', project:'TS-01' },
+  { id:'CAT-02', pillar:'hardware', name:'Handheld & Mobile Fleet', vendor:'Springdell', scope:'Corporate tablets and handhelds under MDM management', team:'support', project:'TS-02' },
+  { id:'CAT-03', pillar:'hardware', name:'Branch Firewall Appliances', vendor:'Fortinet', scope:'FortiGate units — factory core and branch edge', team:'network', project:'NW-02' },
+  { id:'CAT-04', pillar:'software', name:'SAP FUE Licensing', vendor:'SAP Basis', scope:'Full Use Equivalent optimization program', team:'sap', project:'SAP-03' },
+  { id:'CAT-05', pillar:'software', name:'Microsoft 365 / Intune MDM', vendor:'Microsoft', scope:'Enterprise MDM rollout — all sites', team:'systems', project:'SY-02' },
+  { id:'CAT-06', pillar:'software', name:'S/4HANA Platform', vendor:'SAP Basis', scope:'Core ERP infrastructure upgrade in progress', team:'sap', project:'SAP-01' },
+  { id:'CAT-07', pillar:'vendor',   name:'Data Domain Backup Infrastructure', vendor:'Other', scope:'Enterprise backup capacity expansion', team:'systems', project:'SY-03' },
+  { id:'CAT-08', pillar:'vendor',   name:'Huawei Cloud DR Environment', vendor:'Huawei', scope:'Disaster recovery site integration', team:'systems', project:'SY-01' },
+  { id:'CAT-09', pillar:'vendor',   name:'SD-WAN Circuits', vendor:'Local ISP', scope:'Branch connectivity backbone, phase 2 of 35 sites', team:'network', project:'NW-01' },
+  { id:'CAT-10', pillar:'software', name:'SAP MM Module Licensing', vendor:'SAP Basis', scope:'Materials Management module — procurement & inventory', team:'sap-mm', project:'MM-01' },
+  { id:'CAT-11', pillar:'software', name:'SAP HCM Payroll Engine', vendor:'SAP Basis', scope:'Payroll processing and employee master data engine', team:'sap-hcm', project:'HCM-01' },
 ];
 
 /* ======================= STATE ======================= */
-const STORE_KEY = 'juhayna_portal_state_v4';
+const STORE_KEY = 'juhayna_portal_state_v6';
 let state = { role:'lineManager', activeTeam:'overview', search:'', showArchived:false, viewMode:'board', blockerFilter:'open', filters:{ team:null, status:null, vendor:null } };
+let presentationMode = false; /* runtime-only, never persisted — always starts off on load */
 function loadState(){
   try {
     const raw = localStorage.getItem(STORE_KEY);
@@ -725,11 +833,12 @@ function loadState(){
       state = Object.assign(state, saved.state || {});
       if (Array.isArray(saved.projects) && saved.projects.length) PROJECTS = saved.projects;
       if (Array.isArray(saved.teams) && saved.teams.length) TEAMS = saved.teams;
+      if (Array.isArray(saved.catalog) && saved.catalog.length) CATALOG = saved.catalog;
     }
   } catch(e) { /* ignore corrupt storage */ }
 }
 function saveState(){
-  try { localStorage.setItem(STORE_KEY, JSON.stringify({ state, projects: PROJECTS, teams: TEAMS })); }
+  try { localStorage.setItem(STORE_KEY, JSON.stringify({ state, projects: PROJECTS, teams: TEAMS, catalog: CATALOG })); }
   catch(e) { /* storage unavailable — continue without persistence */ }
 }
 
@@ -827,6 +936,8 @@ function renderNav(){
   const openBlockers = PROJECTS.filter(p => p.blocker && p.blocker.status === 'open').length;
   const items = [
     { id:'overview', name:'Overview', icon:'◧' },
+    { id:'roadmap', name:'Strategic Roadmap', icon:'➯' },
+    { id:'catalog', name:'Asset Catalog', icon:'▥' },
     { id:'blockers', name:'Blockages & Vendor Management', icon:'⚠', badge: openBlockers },
   ].concat(TEAMS.map(t => ({ id:t.id, name:t.name, icon:'▤' })));
 
@@ -856,6 +967,12 @@ function renderTopBar(){
   } else if (state.activeTeam === 'blockers') {
     title.textContent = 'Blockages & Vendor Management';
     sub.textContent = 'Cross-functional log · impacted teams · resolution status';
+  } else if (state.activeTeam === 'roadmap') {
+    title.textContent = 'Strategic Roadmap';
+    sub.textContent = 'Multi-quarter timeline · live from active project schedules';
+  } else if (state.activeTeam === 'catalog') {
+    title.textContent = 'Asset Catalog';
+    sub.textContent = 'Hardware, software licensing & vendor infrastructure';
   } else {
     const t = teamById(state.activeTeam);
     title.textContent = t.name;
@@ -864,10 +981,10 @@ function renderTopBar(){
   document.getElementById('roleBadge').textContent = ROLE_LABEL[state.role].toUpperCase();
 
   const newBtn = document.getElementById('newProjectBtn');
-  newBtn.style.display = (canCreate(state.role) && state.activeTeam !== 'blockers') ? 'inline-flex' : 'none';
+  newBtn.style.display = (canCreate(state.role) && state.activeTeam !== 'blockers' && state.activeTeam !== 'roadmap' && state.activeTeam !== 'catalog') ? 'inline-flex' : 'none';
 
   const search = document.getElementById('searchInput');
-  search.style.display = state.activeTeam === 'blockers' ? 'none' : '';
+  search.style.display = (state.activeTeam === 'blockers' || state.activeTeam === 'roadmap' || state.activeTeam === 'catalog') ? 'none' : '';
 }
 
 function tickClock(){
@@ -1124,6 +1241,208 @@ function renderOverview(container){
 }
 
 /* ======================= RENDER: BLOCKAGES & VENDOR DELAYS LOG ======================= */
+/* ======================= STRATEGIC ROADMAP (derived from real project start/end dates) ======================= */
+function projectQuarter(dateStr){
+  const [y, m] = dateStr.split('-').map(Number);
+  return { label: `Q${Math.ceil(m / 3)} ${y}`, sortKey: y * 10 + Math.ceil(m / 3) };
+}
+function quartersSpanned(p){
+  const start = projectQuarter(p.start);
+  const end = projectQuarter(p.end);
+  const out = [];
+  for (let k = start.sortKey; k <= end.sortKey; k++) {
+    const y = Math.floor(k / 10), q = k % 10;
+    if (q >= 1 && q <= 4) out.push({ label: `Q${q} ${y}`, sortKey: k });
+  }
+  return out.length ? out : [start];
+}
+
+function renderRoadmap(container){
+  const list = applyOverviewFilters(PROJECTS.filter(p => !p.archived));
+  const quarterMap = {};
+  list.forEach(p => {
+    quartersSpanned(p).forEach(q => {
+      if (!quarterMap[q.sortKey]) quarterMap[q.sortKey] = { label: q.label, projects: [] };
+      quarterMap[q.sortKey].projects.push(p);
+    });
+  });
+  const quarterKeys = Object.keys(quarterMap).map(Number).sort((a, b) => a - b);
+
+  const teamChips = TEAMS.map(t => `<button data-filter-team="${t.id}" data-active="${state.filters.team === t.id}" class="filter-chip focus-ring">${t.short}</button>`).join('');
+
+  const columns = quarterKeys.length ? quarterKeys.map(k => {
+    const q = quarterMap[k];
+    const cards = q.projects.slice().sort((a, b) => a.start.localeCompare(b.start)).map(p => {
+      const s = STATUS[p.status];
+      const t = teamById(p.team);
+      return `
+        <button data-open-project="${p.id}" class="card w-full text-start bg-panel border border-hair border-s-${s.color} px-3.5 py-3 hover:border-hair2 hover:bg-elev/40 transition-colors focus-ring block roadmap-card">
+          <div class="roadmap-card__name">${p.name}</div>
+          <div class="roadmap-card__meta">${t.short} · ${p.owner}</div>
+          <div class="roadmap-card__range">${p.start} → ${p.end}</div>
+          <div class="flex h-1 w-full overflow-hidden bg-elev mt-2"><div class="prog-fill bg-${s.color}" style="width:${p.progress||0}%"></div></div>
+        </button>`;
+    }).join('');
+    return `
+      <div class="roadmap-col">
+        <div class="roadmap-col__header">${q.label}</div>
+        <div class="roadmap-col__body">${cards || '<div class="chart-empty">No initiatives</div>'}</div>
+      </div>`;
+  }).join('') : '<div class="chart-empty">No projects match the current filters.</div>';
+
+  container.innerHTML = `
+    <div class="filter-bar mb-6">
+      <div class="filter-bar__row">
+        <span class="filter-bar__label">Team</span>
+        <div class="filter-chip-group">${teamChips}</div>
+      </div>
+      ${state.filters.team ? `<button id="clearRoadmapFilter" class="filter-clear-btn focus-ring">Clear filter ✕</button>` : ''}
+    </div>
+    <div class="roadmap-legend">
+      <span><span class="w-2 h-2 bg-pending inline-block"></span>Pending</span>
+      <span><span class="w-2 h-2 bg-progress inline-block"></span>In Progress</span>
+      <span><span class="w-2 h-2 bg-done inline-block"></span>Done</span>
+      <span class="text-inkdim">Each card spans every quarter it's active in — derived live from real project start/end dates.</span>
+    </div>
+    <div class="roadmap-grid">${columns}</div>
+  `;
+
+  container.querySelectorAll('[data-filter-team]').forEach(btn => {
+    btn.addEventListener('click', () => toggleFilter('team', btn.dataset.filterTeam));
+  });
+  const clearBtn = container.querySelector('#clearRoadmapFilter');
+  if (clearBtn) clearBtn.addEventListener('click', () => { state.filters.team = null; saveState(); render(); });
+  container.querySelectorAll('[data-open-project]').forEach(el => {
+    el.addEventListener('click', () => openDetailModal(el.dataset.openProject));
+  });
+}
+
+/* ======================= ASSET CATALOG ======================= */
+function canManageCatalog(role){ return role === 'lineManager'; }
+
+const CATALOG_PILLARS = [
+  { key:'hardware', label:'Hardware' },
+  { key:'software', label:'Software Licenses' },
+  { key:'vendor', label:'Vendor Infrastructure' },
+];
+
+function catalogItemHtml(item){
+  const t = item.team ? teamById(item.team) : null;
+  const p = item.project ? PROJECTS.find(x => x.id === item.project) : null;
+  return `
+    <div class="catalog-item">
+      <div class="catalog-item__top">
+        <span class="catalog-item__name">${item.name}</span>
+        <span class="chip chip-gold">${item.vendor}</span>
+      </div>
+      <div class="catalog-item__scope">${item.scope}</div>
+      ${t || p ? `<div class="catalog-item__meta">
+        ${t ? t.name : ''}${t && p ? ' · ' : ''}${p ? `<button data-open-project="${p.id}" class="text-gold hover:underline focus-ring">${p.id}</button>` : ''}
+      </div>` : ''}
+    </div>`;
+}
+
+function renderCatalog(container){
+  const groups = CATALOG_PILLARS.map(pillar => {
+    const items = CATALOG.filter(c => c.pillar === pillar.key);
+    return `
+      <div class="chart-card">
+        <div class="chart-title">${pillar.label}</div>
+        <div class="catalog-list">${items.map(catalogItemHtml).join('') || '<div class="chart-empty">No entries yet.</div>'}</div>
+      </div>`;
+  }).join('');
+
+  container.innerHTML = `
+    <div class="flex items-center justify-between mb-6 flex-wrap gap-3">
+      <div class="text-[12px] text-inkdim">Hardware, software licensing and vendor infrastructure currently tracked across all teams.</div>
+      ${canManageCatalog(state.role) ? `
+      <button id="newAssetBtn" class="flex items-center gap-1.5 bg-gold/15 border border-gold text-gold text-[13px] font-mono px-4 py-2 hover:bg-gold/25 transition-colors focus-ring">
+        <span>+</span><span>New Asset</span>
+      </button>` : ''}
+    </div>
+    <div class="charts-grid-3">${groups}</div>
+  `;
+
+  container.querySelectorAll('[data-open-project]').forEach(el => {
+    el.addEventListener('click', () => openDetailModal(el.dataset.openProject));
+  });
+  const newAssetBtn = container.querySelector('#newAssetBtn');
+  if (newAssetBtn) newAssetBtn.addEventListener('click', openNewAssetModal);
+}
+
+function openNewAssetModal(){
+  document.getElementById('modalTeam').textContent = 'NEW ASSET';
+  document.getElementById('modalTitle').textContent = 'Add Catalog Entry';
+
+  const pillarOpts = CATALOG_PILLARS.map(p => `<option value="${p.key}">${p.label}</option>`).join('');
+  const teamOpts = `<option value="">None</option>` + TEAMS.map(t => `<option value="${t.id}">${t.name}</option>`).join('');
+  const projectOpts = `<option value="">None</option>` + PROJECTS.filter(p => !p.archived).map(p => `<option value="${p.id}">${p.id} — ${p.name}</option>`).join('');
+
+  const body = document.getElementById('modalBody');
+  body.innerHTML = `
+    <div class="space-y-3">
+      <div>
+        <span class="field-label">PILLAR</span>
+        <select id="na-pillar" class="field-input">${pillarOpts}</select>
+      </div>
+      <div>
+        <span class="field-label">ASSET / LICENSE NAME</span>
+        <input id="na-name" class="field-input" placeholder="e.g. Adobe Creative Cloud Licensing">
+      </div>
+      <div>
+        <span class="field-label">VENDOR</span>
+        <input id="na-vendor" class="field-input" placeholder="e.g. Adobe">
+      </div>
+      <div>
+        <span class="field-label">SCOPE / DESCRIPTION</span>
+        <textarea id="na-scope" rows="2" class="field-input" placeholder="What this covers"></textarea>
+      </div>
+      <div>
+        <span class="field-label">LINKED TEAM (optional)</span>
+        <select id="na-team" class="field-input">${teamOpts}</select>
+      </div>
+      <div>
+        <span class="field-label">LINKED PROJECT (optional)</span>
+        <select id="na-project" class="field-input">${projectOpts}</select>
+      </div>
+    </div>
+    <div id="naError" class="hidden text-[12.5px] text-blocked font-mono"></div>
+    <div class="pt-3 border-t border-hair flex items-center justify-end gap-2">
+      <button id="naCancel" class="font-mono text-[12.5px] px-3 py-1.5 border border-hair2 text-inkdim hover:text-ink transition-colors focus-ring">Cancel</button>
+      <button id="naCreate" class="font-mono text-[12.5px] px-4 py-1.5 bg-gold/15 border border-gold text-gold hover:bg-gold/25 transition-colors focus-ring">Add asset</button>
+    </div>
+  `;
+
+  document.getElementById('naCancel').addEventListener('click', closeModal);
+  document.getElementById('naCreate').addEventListener('click', () => {
+    const name = document.getElementById('na-name').value.trim();
+    const vendor = document.getElementById('na-vendor').value.trim();
+    const scope = document.getElementById('na-scope').value.trim();
+    const errEl = document.getElementById('naError');
+    if (!name || !vendor || !scope) {
+      errEl.textContent = 'Asset name, vendor, and scope are all required.';
+      errEl.classList.remove('hidden');
+      return;
+    }
+    const nums = CATALOG.map(c => parseInt(c.id.replace('CAT-',''),10) || 0);
+    const nextNum = (nums.length ? Math.max(...nums) : 0) + 1;
+    CATALOG.push({
+      id: `CAT-${String(nextNum).padStart(2,'0')}`,
+      pillar: document.getElementById('na-pillar').value,
+      name, vendor, scope,
+      team: document.getElementById('na-team').value || null,
+      project: document.getElementById('na-project').value || null,
+    });
+    saveState();
+    toast('Asset added', 'ok');
+    closeModal();
+    render();
+  });
+
+  document.getElementById('modalBackdrop').classList.remove('hidden');
+  document.getElementById('modalBackdrop').classList.add('flex');
+}
+
 function renderBlockersPage(container){
   const all = PROJECTS.filter(p => p.blocker);
   const open = all.filter(p => p.blocker.status === 'open');
@@ -1881,6 +2200,8 @@ function render(){
 
   if (state.activeTeam === 'overview') renderOverview(wrap);
   else if (state.activeTeam === 'blockers') renderBlockersPage(wrap);
+  else if (state.activeTeam === 'roadmap') renderRoadmap(wrap);
+  else if (state.activeTeam === 'catalog') renderCatalog(wrap);
   else renderTeamBoard(wrap);
 }
 
@@ -1892,10 +2213,36 @@ document.getElementById('exportBriefBtn').addEventListener('click', () => {
   if (ts) ts.textContent = 'Generated ' + new Date().toLocaleString('en-GB', { weekday:'long', year:'numeric', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit' });
   window.print();
 });
+
+/* ======================= PRESENTATION MODE ======================= */
+function togglePresentationMode(){
+  presentationMode = !presentationMode;
+  document.body.classList.toggle('presentation-mode', presentationMode);
+  if (presentationMode) {
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen().catch(() => { /* fullscreen not permitted in this context — clean view still applies */ });
+    }
+  } else if (document.fullscreenElement && document.exitFullscreen) {
+    document.exitFullscreen().catch(() => {});
+  }
+}
+document.getElementById('presentModeBtn').addEventListener('click', togglePresentationMode);
+document.getElementById('exitPresentBtn').addEventListener('click', togglePresentationMode);
+document.addEventListener('fullscreenchange', () => {
+  if (!document.fullscreenElement && presentationMode) {
+    presentationMode = false;
+    document.body.classList.remove('presentation-mode');
+  }
+});
 document.getElementById('newTeamBtn').addEventListener('click', () => { if (canManageTeams(state.role)) openNewTeamModal(); });
 document.getElementById('modalClose').addEventListener('click', closeModal);
 document.getElementById('modalBackdrop').addEventListener('click', e => { if (e.target.id === 'modalBackdrop') closeModal(); });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeModal();
+    if (presentationMode) togglePresentationMode();
+  }
+});
 document.getElementById('searchInput').addEventListener('input', e => {
   state.search = e.target.value; render();
   document.getElementById('searchInput').focus();
