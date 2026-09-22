@@ -1,0 +1,1911 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Internal IT & SAP project governance portal for Juhayna — RBAC-controlled project tracking, vendor management, and blockage escalation across Network, Systems, Support, SAP, and Application teams.">
+<title>Juhayna IT & SAP Project Portal</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: dark;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    --c-base:#0b192c; --c-panel:#1e3e62; --c-elev:#2c507a; --c-hair:rgba(255,255,255,0.12); --c-hair2:#3D6D9E;
+    --c-ink:#FFFFFF; --c-inkdim:rgba(214,231,247,0.78); --c-gold:#F1C40F; --c-sky:#33B5E5;
+    --c-done:#22E58A; --c-progress:#FFB020; --c-pending:#33B5E5; --c-blocked:#FF4757; --c-archived:#5C6B85;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  html, body { height: 100%; margin: 0; }
+  body { display:flex; flex-direction:column; }
+  body { background:
+      radial-gradient(circle at 12% 8%, rgba(241,196,15,0.08), transparent 42%),
+      radial-gradient(circle at 88% 92%, rgba(51,181,229,0.10), transparent 46%),
+      #0b192c;
+    background-attachment: fixed;
+  }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: #1e3e62; }
+  ::-webkit-scrollbar-thumb { background: #3D6D9E; border-radius: 0px; }
+  ::-webkit-scrollbar-thumb:hover { background: #F1C40F; }
+
+  .settle-in { animation: settle 320ms cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes settle { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  .toast-in { animation: toastIn 220ms cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes toastIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+  @media (prefers-reduced-motion: reduce) { .settle-in, .toast-in { animation: none; } }
+
+  .focus-ring:focus-visible { outline: 2px solid #F1C40F; outline-offset: 2px; }
+  .nav-item[data-active="true"] { background: rgba(241,196,15,0.14); border-inline-start-color: #F1C40F; color: #FFFFFF; box-shadow: inset 0 0 16px rgba(241,196,15,0.10); }
+  .nav-item { border-inline-start: 3px solid transparent; }
+  .kpi-bar { transition: width 500ms cubic-bezier(.2,.7,.2,1); }
+  .card {
+    border-inline-start-width: 3px;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(0,10,30,0.30), 0 12px 28px rgba(0,15,40,0.32);
+    transition: transform 260ms cubic-bezier(.16,1,.3,1), box-shadow 260ms cubic-bezier(.16,1,.3,1);
+  }
+  .card.bg-panel { border-top-color: rgba(241,196,15,0.22); border-inline-end-color: rgba(51,181,229,0.20); border-bottom-color: rgba(51,181,229,0.14); }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 2px 4px rgba(0,10,30,0.35), 0 20px 40px rgba(0,15,40,0.42), 0 0 0 1px rgba(241,196,15,0.28), 0 0 32px rgba(51,181,229,0.12); }
+  .prog-fill { transition: width 400ms cubic-bezier(.2,.7,.2,1); border-radius: 9999px; }
+  .prog-fill.bg-done { background: linear-gradient(90deg, #16A75F, #22E58A) !important; }
+  .prog-fill.bg-progress { background: linear-gradient(90deg, #D98C00, #FFB020) !important; }
+  .prog-fill.bg-pending { background: linear-gradient(90deg, #1F8FBF, #33B5E5) !important; }
+  .nav-badge-glow { box-shadow: 0 0 10px rgba(255,71,87,0.55), 0 0 4px rgba(255,71,87,0.8); }
+  .w-16.h-1.bg-elev.overflow-hidden, .w-16.h-1\.5.bg-elev.overflow-hidden { border-radius: 9999px; }
+  .w-16.h-1.bg-elev.overflow-hidden > div, .w-16.h-1\.5.bg-elev.overflow-hidden > div { border-radius: 9999px; }
+
+  input[type="date"]::-webkit-calendar-picker-indicator { filter: invert(0.85); cursor: pointer; }
+  input[type="range"] { accent-color: #F1C40F; }
+  input[type="checkbox"] { accent-color: #F1C40F; }
+
+  .field-input { background: rgba(44,80,122,0.45); border: 1px solid #3D6D9E; color: #FFFFFF; padding: .5rem .65rem; font-size: .85rem; width: 100%; font-family: inherit; border-radius: 8px; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+  .field-input option { background: #0b192c; color: #FFFFFF; }
+  .field-label { font-size: 11px; font-family: 'IBM Plex Mono', monospace; color: rgba(214,231,247,0.78); display:block; margin-bottom: 4px; letter-spacing: .02em; }
+  .chip { font-size: 10.5px; font-family: 'IBM Plex Mono', monospace; padding: 2px 9px; background: rgba(255,255,255,0.04); border: 1px solid #3D6D9E; color: rgba(214,231,247,0.78); border-radius: 9999px; }
+  .chip-gold { border-color: #F1C40F; color: #F1C40F; }
+
+  table.log-table { border-collapse: collapse; }
+  table.log-table th { text-align: start; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: rgba(214,231,247,0.78); font-weight: 500; padding: 8px 10px; border-bottom: 1px solid rgba(255,255,255,0.15); white-space: nowrap; }
+  table.log-table td { padding: 9px 10px; font-size: 12.5px; border-bottom: 1px solid rgba(255,255,255,0.15); vertical-align: top; }
+  table.log-table tr:hover td { background: rgba(51,181,229,0.08); }
+  .bg-panel.border.border-hair.overflow-x-auto { border-radius: 12px; box-shadow: 0 1px 2px rgba(0,10,30,0.30), 0 12px 28px rgba(0,15,40,0.28); border-color: rgba(255,255,255,0.08); }
+
+  .tab-btn[data-active="true"] { color: #FFFFFF; border-color: #33B5E5; }
+  button { font: inherit; cursor: pointer; border-radius: 8px; }
+  .nav-item, .tab-btn { border-radius: 0; }
+  select, input, textarea { font: inherit; }
+  a { color: inherit; }
+  #modalCard { border-radius: 16px; box-shadow: 0 24px 60px rgba(0,10,30,0.55); overflow: hidden; }
+  #modalBackdrop { backdrop-filter: blur(3px); }
+  .brand-badge { border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.28); }
+  .logo-plate { background:#FFFFFF; border-radius:9px; padding:7px 12px; display:inline-flex; align-items:center; box-shadow:0 4px 12px rgba(0,0,0,0.3); }
+  .logo-img { height:22px; width:auto; display:block; }
+
+  /* ---- brand gradient touches (Juhayna Navy -> Sky Blue) ---- */
+  .topbar-gradient { background: linear-gradient(120deg, rgba(30,62,98,0.75) 0%, rgba(241,196,15,0.10) 55%, rgba(51,181,229,0.10) 100%); }
+  .brand-band { background: linear-gradient(160deg, rgba(0,153,204,0.16) 0%, rgba(0,153,204,0) 75%); }
+
+  /* ---- Analytics & Progress Charts ---- */
+  .charts-grid { display:grid; grid-template-columns:repeat(1,1fr); gap:1.5rem; margin-bottom:2rem; }
+  @media (min-width:1024px) { .charts-grid { grid-template-columns:repeat(3,1fr); } }
+  .charts-grid-2 { display:grid; grid-template-columns:repeat(1,1fr); gap:1.5rem; }
+  @media (min-width:1024px) { .charts-grid-2 { grid-template-columns:repeat(2,1fr); } }
+  .charts-hero { box-shadow: 0 1px 2px rgba(0,10,30,0.30), 0 12px 28px rgba(0,15,40,0.32), 0 0 40px rgba(51,181,229,0.07); }
+  .chart-card {
+    background:rgba(30,62,98,0.55); border:1px solid rgba(255,255,255,0.12); padding:1.5rem;
+    border-top-color: rgba(241,196,15,0.22); border-inline-end-color: rgba(51,181,229,0.20); border-bottom-color: rgba(51,181,229,0.14);
+    border-radius:12px; box-shadow:0 1px 2px rgba(0,10,30,0.30), 0 12px 28px rgba(0,15,40,0.32);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    transition: transform 260ms cubic-bezier(.16,1,.3,1), box-shadow 260ms cubic-bezier(.16,1,.3,1);
+  }
+  .chart-card:hover { transform: translateY(-3px); box-shadow: 0 2px 4px rgba(0,10,30,0.35), 0 20px 40px rgba(0,15,40,0.42), 0 0 0 1px rgba(241,196,15,0.28), 0 0 32px rgba(51,181,229,0.12); }
+  .chart-title { font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:.9rem; color:var(--c-ink); margin-bottom:1.25rem; letter-spacing:.01em; }
+  .chart-empty { font-size:.8rem; color:var(--c-inkdim); padding:1rem 0; text-align:center; }
+
+  .kpi-card-flex { display:flex; align-items:flex-end; justify-content:space-between; gap:.75rem; }
+  .kpi-spark { width:64px; height:26px; flex-shrink:0; opacity:.9; }
+
+  .donut-wrap { display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; }
+  .donut-wrap--hero { gap:2.5rem; justify-content:center; padding:.5rem 0 .25rem; }
+  .donut-chart { width:112px; height:112px; border-radius:50%; flex-shrink:0; position:relative; }
+  .donut-chart--lg { width:160px; height:160px; }
+  .donut-chart--lg .donut-hole { inset:22px; }
+  .donut-wrap--hero .donut-legend { font-size:.85rem; gap:.75rem; min-width:180px; }
+  .donut-hole { position:absolute; inset:15px; border-radius:50%; background:var(--c-panel); display:flex; flex-direction:column; align-items:center; justify-content:center; }
+
+  /* ---- KPI cards (sparkline underneath) ---- */
+  .kpi-card-stack { display:flex; flex-direction:column; }
+  .kpi-spark-placeholder { height:26px; }
+
+  /* ---- Main trend chart row (trend + donut side by side) ---- */
+  .trend-row { display:flex; flex-direction:column; gap:1.5rem; }
+  @media (min-width:1024px) {
+    .trend-row { flex-direction:row; align-items:stretch; }
+    .trend-card { flex:2 1 0%; min-width:0; }
+    .donut-card { flex:1 1 0%; display:flex; flex-direction:column; justify-content:center; }
+  }
+  .trend-chart-wrap { width:100%; }
+  .trend-chart-svg { width:100%; height:200px; display:block; }
+  .trend-chart-labels { position:relative; height:16px; margin-top:.5rem; }
+  .trend-chart-labels span { position:absolute; transform:translateX(-50%); font-family:'IBM Plex Mono',monospace; font-size:10px; color:var(--c-inkdim); white-space:nowrap; }
+
+  /* ---- Team & Vendor breakdown 3-column grid ---- */
+  .charts-grid-3 { display:grid; grid-template-columns:repeat(1,1fr); gap:1.5rem; }
+  @media (min-width:1024px) { .charts-grid-3 { grid-template-columns:repeat(3,1fr); } }
+  .chart-title-row { margin-bottom:1.25rem; }
+
+  /* ---- Clickable team workload rows ---- */
+  .hbar-row--clickable { background:none; border:none; padding:0; width:100%; text-align:start; cursor:pointer; transition:opacity 150ms; }
+  .hbar-row--clickable:hover { opacity:.85; }
+  .hbar-row--dimmed { opacity:.35; }
+  .hbar-row--active .hbar-label { color:#FFFFFF; font-weight:600; }
+  .hbar-row--active .hbar-track { box-shadow:0 0 0 1px rgba(51,181,229,0.5); }
+
+  .legend-item--clickable { cursor:pointer; background:none; border:none; text-align:start; width:100%; padding:3px 6px; border-radius:6px; transition:opacity 150ms, background 150ms; }
+  .legend-item--clickable:hover { background:rgba(255,255,255,0.05); }
+  .legend-item--dimmed { opacity:.4; }
+  .legend-item--active { background:rgba(51,181,229,0.14); }
+
+  .team-row--highlighted { background:rgba(51,181,229,0.06); margin-inline:-0.5rem; padding-inline:0.5rem; border-radius:8px; }
+
+  /* ---- Power BI-style cross-filter bar ---- */
+  .filter-bar { display:flex; flex-wrap:wrap; align-items:center; gap:1.5rem; background:var(--c-panel); border:1px solid var(--c-hair); border-radius:12px; padding:1rem 1.25rem; margin-bottom:.75rem; box-shadow:0 1px 2px rgba(0,10,30,0.25), 0 8px 20px rgba(0,15,40,0.2); }
+  .filter-bar__row { display:flex; align-items:center; gap:.65rem; }
+  .filter-bar__label { font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--c-inkdim); text-transform:uppercase; letter-spacing:.04em; }
+  .filter-chip-group { display:flex; gap:.4rem; flex-wrap:wrap; }
+  .filter-chip { font-family:'IBM Plex Mono',monospace; font-size:11px; padding:5px 12px; border-radius:9999px; border:1px solid var(--c-hair2); background:none; color:var(--c-inkdim); cursor:pointer; transition:all 150ms; }
+  .filter-chip:hover { color:#FFFFFF; border-color:var(--c-sky); }
+  .filter-chip[data-active="true"] { background:rgba(51,181,229,0.18); border-color:var(--c-sky); color:#FFFFFF; }
+  .filter-vendor-select { width:auto; min-width:150px; }
+  .filter-clear-btn { margin-inline-start:auto; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--c-inkdim); background:none; border:1px solid var(--c-hair2); padding:5px 12px; border-radius:9999px; cursor:pointer; transition:all 150ms; }
+  .filter-clear-btn:hover { color:var(--c-blocked); border-color:var(--c-blocked); }
+  .active-filters-row { display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; font-size:11px; color:var(--c-inkdim); margin-bottom:1.5rem; }
+  .active-filter-chip { background:rgba(51,181,229,0.14); color:var(--c-sky); padding:3px 10px; border-radius:9999px; font-family:'IBM Plex Mono',monospace; font-size:10.5px; }
+  .filter-hint { font-size:11px; color:var(--c-inkdim); margin-bottom:1.5rem; }
+  .hbar-row--clickable:hover .hbar-label { color:var(--c-ink); }
+
+  /* ---- Upcoming deadlines mini table ---- */
+  .deadline-list { display:flex; flex-direction:column; }
+  .deadline-row { display:flex; align-items:center; justify-content:space-between; gap:.75rem; width:100%; text-align:start; background:none; border:none; padding:.6rem .25rem; cursor:pointer; border-bottom:1px solid rgba(255,255,255,0.06); }
+  .deadline-row:last-child { border-bottom:none; }
+  .deadline-row:hover { background:rgba(51,181,229,0.07); }
+  .deadline-row__main { min-width:0; overflow:hidden; }
+  .deadline-row__name { display:block; font-size:12.5px; color:var(--c-ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .deadline-row__meta { display:block; font-size:10.5px; color:var(--c-inkdim); margin-top:2px; }
+  .deadline-row__end { flex-shrink:0; }
+
+  /* ---- Footer directive bar ---- */
+  .footer-bar { margin-top:2rem; border-radius:12px; box-shadow:0 1px 2px rgba(0,10,30,0.25), 0 8px 20px rgba(0,15,40,0.22); }
+
+  /* ---- Health & Summary cards ---- */
+  .health-card { display:flex; flex-direction:column; }
+  .health-card__label { font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--c-inkdim); text-transform:uppercase; letter-spacing:.04em; }
+  .health-card__value { font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600; color:var(--c-ink); margin-top:.4rem; line-height:1; }
+  .health-card__subtext { font-size:11px; color:var(--c-inkdim); margin-top:.35rem; }
+  .health-badge { display:inline-block; align-self:flex-start; margin-top:.85rem; font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.03em; padding:3px 10px; border-radius:9999px; }
+  .health-badge--done { background:rgba(34,229,138,0.15); color:var(--c-done); }
+  .health-badge--progress { background:rgba(241,196,15,0.15); color:var(--c-gold); }
+  .health-badge--blocked { background:rgba(255,71,87,0.15); color:var(--c-blocked); }
+  .health-badge--sky { background:rgba(51,181,229,0.15); color:var(--c-sky); }
+  .health-badge--archived { background:rgba(92,107,133,0.2); color:var(--c-inkdim); }
+
+  /* ---- Progress Breakdown list (per-project) ---- */
+  .progress-breakdown-list { display:flex; flex-direction:column; gap:.9rem; max-height:360px; overflow-y:auto; padding-right:.25rem; }
+  .progress-row { width:100%; text-align:start; background:none; border:none; padding:0; cursor:pointer; }
+  .progress-row__top { display:flex; justify-content:space-between; align-items:center; margin-bottom:.35rem; gap:.5rem; }
+  .progress-row__name { font-size:12.5px; color:var(--c-ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .progress-row__track { height:6px; background:var(--c-elev); border-radius:9999px; overflow:hidden; }
+  .progress-row__meta { font-size:10.5px; color:var(--c-inkdim); margin-top:.35rem; font-family:'IBM Plex Mono',monospace; }
+  .progress-row:hover .progress-row__name { color:var(--c-sky); }
+
+  /* ---- Time Tracking card ---- */
+  .time-stat-row { display:flex; justify-content:space-between; gap:.75rem; text-align:center; padding-bottom:1.1rem; border-bottom:1px solid rgba(255,255,255,0.06); }
+  .time-stat { flex:1; }
+  .time-stat__val { font-family:'IBM Plex Mono',monospace; font-size:1.5rem; font-weight:600; line-height:1; }
+  .time-stat__label { font-size:10px; color:var(--c-inkdim); margin-top:.4rem; text-transform:uppercase; letter-spacing:.03em; }
+  .time-tracking-subtitle { font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--c-inkdim); text-transform:uppercase; letter-spacing:.04em; margin:1.1rem 0 .75rem; }
+
+  /* ---- Cost Analysis empty state ---- */
+  .cost-empty-state { text-align:center; padding:1.25rem 0 .5rem; }
+  .cost-empty-state__badge { display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:.05em; color:var(--c-inkdim); border:1px dashed var(--c-hair2); padding:4px 11px; border-radius:9999px; margin-bottom:.9rem; }
+  .cost-empty-state__text { font-size:12px; color:var(--c-inkdim); line-height:1.55; max-width:280px; margin:0 auto; }
+
+  /* ---- Team Workload Distribution card ---- */
+  .team-dist-row { margin-bottom:.9rem; }
+  .team-dist-row__label { display:flex; justify-content:space-between; font-size:11.5px; color:var(--c-inkdim); margin-bottom:.3rem; }
+  .team-dist-row__track { display:flex; height:8px; border-radius:9999px; overflow:hidden; background:var(--c-elev); }
+  .team-dist-legend { display:flex; gap:1rem; font-size:10.5px; color:var(--c-inkdim); margin-top:.6rem; padding-top:.85rem; border-top:1px solid rgba(255,255,255,0.06); }
+  .team-dist-legend span { display:flex; align-items:center; gap:.35rem; }
+  .team-dist-blocker-link { display:block; width:100%; text-align:start; background:none; border:none; padding:.6rem 0 0; margin-top:.25rem; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--c-blocked); cursor:pointer; }
+  .team-dist-blocker-link:hover { text-decoration:underline; }
+  .donut-total { font-family:'IBM Plex Mono',monospace; font-size:1.4rem; font-weight:600; color:var(--c-ink); line-height:1; }
+  .donut-total-label { font-family:'IBM Plex Mono',monospace; font-size:.6rem; color:var(--c-inkdim); margin-top:.25rem; text-transform:uppercase; letter-spacing:.04em; }
+  .donut-legend { display:flex; flex-direction:column; gap:.5rem; font-size:.75rem; color:var(--c-inkdim); flex:1; min-width:130px; }
+  .legend-item { display:flex; align-items:center; gap:.5rem; }
+  .legend-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+  .legend-count { margin-left:auto; font-family:'IBM Plex Mono',monospace; color:var(--c-ink); }
+
+  .hbar-row { display:flex; align-items:center; gap:.75rem; margin-bottom:.85rem; }
+  .hbar-row:last-child { margin-bottom:0; }
+  .hbar-label { width:84px; flex-shrink:0; font-size:.7rem; color:var(--c-inkdim); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .hbar-track { flex:1; height:10px; background:var(--c-elev); overflow:hidden; border-radius:9999px; }
+  .hbar-fill { height:100%; transition:width 500ms cubic-bezier(.2,.7,.2,1); border-radius:9999px; }
+  .flex.h-1\.5.w-full.overflow-hidden.bg-elev, .flex.h-1.w-full.overflow-hidden.bg-elev { border-radius:9999px; }
+  .hbar-value { width:22px; flex-shrink:0; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:.75rem; color:var(--c-ink); }
+
+  /* ================= LOCAL UTILITY LAYER (statically compiled — no CDN) ================= */
+
+  /* ---- display / flex / grid ---- */
+  .block{display:block;}
+  .inline-block{display:inline-block;}
+  .flex{display:flex;}
+  .grid{display:grid;}
+  .hidden{display:none;}
+  .flex-1{flex:1 1 0%;}
+  .flex-col{flex-direction:column;}
+  .flex-wrap{flex-wrap:wrap;}
+  .items-center{align-items:center;}
+  .items-start{align-items:flex-start;}
+  .justify-between{justify-content:space-between;}
+  .justify-center{justify-content:center;}
+  .justify-end{justify-content:flex-end;}
+  .shrink-0{flex-shrink:0;}
+  .min-w-0{min-width:0;}
+  .grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr));}
+  .grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr));}
+
+  /* ---- gap ---- */
+  .gap-1{gap:0.25rem;}
+  .gap-1\.5{gap:0.375rem;}
+  .gap-2{gap:0.5rem;}
+  .gap-2\.5{gap:0.625rem;}
+  .gap-3{gap:0.75rem;}
+  .gap-4{gap:1rem;}
+  .gap-5{gap:1.25rem;}
+  .gap-6{gap:1.5rem;}
+  .gap-8{gap:2rem;}
+
+  /* ---- sizing (w-/h-) ---- */
+  .h-1{height:0.25rem;}
+  .w-1\.5{width:0.375rem;}
+  .h-1\.5{height:0.375rem;}
+  .w-2{width:0.5rem;}
+  .h-2{height:0.5rem;}
+  .w-5{width:1.25rem;}
+  .h-5{height:1.25rem;}
+  .w-9{width:2.25rem;}
+  .h-9{height:2.25rem;}
+  .w-16{width:4rem;}
+  .h-16{height:4rem;}
+  .w-56{width:14rem;}
+  .w-64{width:16rem;}
+  .w-full{width:100%;}
+  .min-h-screen{min-height:100vh;}
+  .min-w-\[260px\]{min-width:260px;}
+  .max-w-\[240px\]{max-width:240px;}
+  .max-w-\[260px\]{max-width:260px;}
+  .max-h-\[380px\]{max-height:380px;}
+  .max-w-xl{max-width:36rem;}
+
+  /* ---- padding ---- */
+  .p-4{padding:1rem;}
+  .p-5{padding:1.25rem;}
+  .p-6{padding:1.5rem;}
+  .px-0\.5{padding-left:0.125rem;padding-right:0.125rem;}
+  .px-1{padding-left:0.25rem;padding-right:0.25rem;}
+  .px-1\.5{padding-left:0.375rem;padding-right:0.375rem;}
+  .px-2{padding-left:0.5rem;padding-right:0.5rem;}
+  .px-2\.5{padding-left:0.625rem;padding-right:0.625rem;}
+  .px-3{padding-left:0.75rem;padding-right:0.75rem;}
+  .px-3\.5{padding-left:0.875rem;padding-right:0.875rem;}
+  .px-4{padding-left:1rem;padding-right:1rem;}
+  .px-5{padding-left:1.25rem;padding-right:1.25rem;}
+  .px-6{padding-left:1.5rem;padding-right:1.5rem;}
+  .px-8{padding-left:2rem;padding-right:2rem;}
+  .py-1{padding-top:0.25rem;padding-bottom:0.25rem;}
+  .py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem;}
+  .py-2{padding-top:0.5rem;padding-bottom:0.5rem;}
+  .py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem;}
+  .py-3{padding-top:0.75rem;padding-bottom:0.75rem;}
+  .py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem;}
+  .py-4{padding-top:1rem;padding-bottom:1rem;}
+  .py-5{padding-top:1.25rem;padding-bottom:1.25rem;}
+  .py-6{padding-top:1.5rem;padding-bottom:1.5rem;}
+  .py-8{padding-top:2rem;padding-bottom:2rem;}
+  .pt-1{padding-top:0.25rem;}
+  .pt-2{padding-top:0.5rem;}
+  .pt-3{padding-top:0.75rem;}
+  .pt-4{padding-top:1rem;}
+  .pb-2{padding-bottom:0.5rem;}
+  .pe-1{padding-inline-end:0.25rem;}
+  .ps-6{padding-inline-start:1.5rem;}
+
+  /* ---- margin ---- */
+  .mb-1{margin-bottom:0.25rem;}
+  .mb-1\.5{margin-bottom:0.375rem;}
+  .mb-2{margin-bottom:0.5rem;}
+  .mb-2\.5{margin-bottom:0.625rem;}
+  .mb-3{margin-bottom:0.75rem;}
+  .mb-4{margin-bottom:1rem;}
+  .mb-6{margin-bottom:1.5rem;}
+  .mb-8{margin-bottom:2rem;}
+  .mt-0\.5{margin-top:0.125rem;}
+  .mt-1{margin-top:0.25rem;}
+  .mt-1\.5{margin-top:0.375rem;}
+  .mt-2{margin-top:0.5rem;}
+  .mt-2\.5{margin-top:0.625rem;}
+  .mt-3{margin-top:0.75rem;}
+  .mt-5{margin-top:1.25rem;}
+  .mt-6{margin-top:1.5rem;}
+  .mt-8{margin-top:2rem;}
+  .my-6{margin-top:1.5rem;margin-bottom:1.5rem;}
+  .-mb-px{margin-bottom:-1px;}
+
+  /* ---- space-y ---- */
+  .space-y-0\.5 > * + * {margin-top:0.125rem;}
+  .space-y-2 > * + * {margin-top:0.5rem;}
+  .space-y-2\.5 > * + * {margin-top:0.625rem;}
+  .space-y-3 > * + * {margin-top:0.75rem;}
+  .space-y-4 > * + * {margin-top:1rem;}
+
+  /* ---- borders ---- */
+  .border{border-width:1px;border-style:solid;}
+  .border-t{border-top-width:1px;border-top-style:solid;}
+  .border-b{border-bottom-width:1px;border-bottom-style:solid;}
+  .border-b-2{border-bottom-width:2px;border-bottom-style:solid;}
+  .border-e{border-inline-end-width:1px;border-inline-end-style:solid;}
+  .border-s-2{border-inline-start-width:2px;border-inline-start-style:solid;}
+  .border-dashed{border-style:dashed;}
+  .border-transparent{border-color:transparent;}
+  .rounded-sm{border-radius:0.125rem;}
+  .rounded-full{border-radius:9999px;}
+
+  /* ---- color utilities (bg-/text-/border-/border-s- x token) ---- */
+  .bg-base{background-color:#0b192c;}
+  .text-base{color:#0b192c;}
+  .border-base{border-color:#0b192c;}
+  .border-s-base{border-inline-start-color:#0b192c;}
+  .bg-panel{background-color:rgba(30,62,98,0.55);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);}
+  .text-panel{color:#1e3e62;}
+  .border-panel{border-color:#1e3e62;}
+  .border-s-panel{border-inline-start-color:#1e3e62;}
+  .bg-elev{background-color:rgba(44,80,122,0.6);}
+  .text-elev{color:#2c507a;}
+  .border-elev{border-color:#2c507a;}
+  .border-s-elev{border-inline-start-color:#2c507a;}
+  .bg-hair{background-color:rgba(255,255,255,0.12);}
+  .text-hair{color:rgba(255,255,255,0.5);}
+  .border-hair{border-color:rgba(255,255,255,0.12);}
+  .border-s-hair{border-inline-start-color:rgba(255,255,255,0.12);}
+  .bg-hair2{background-color:#3D6D9E;}
+  .text-hair2{color:#3D6D9E;}
+  .border-hair2{border-color:#3D6D9E;}
+  .border-s-hair2{border-inline-start-color:#3D6D9E;}
+  .bg-ink{background-color:#FFFFFF;}
+  .text-ink{color:#FFFFFF;}
+  .border-ink{border-color:#FFFFFF;}
+  .border-s-ink{border-inline-start-color:#FFFFFF;}
+  .bg-inkdim{background-color:rgba(214,231,247,0.78);}
+  .text-inkdim{color:rgba(214,231,247,0.78);}
+  .border-inkdim{border-color:rgba(214,231,247,0.78);}
+  .border-s-inkdim{border-inline-start-color:rgba(214,231,247,0.78);}
+  .bg-gold{background-color:#F1C40F;}
+  .text-gold{color:#F1C40F;}
+  .border-gold{border-color:#F1C40F;}
+  .border-s-gold{border-inline-start-color:#F1C40F;}
+  .bg-done{background-color:#22E58A;}
+  .text-done{color:#22E58A;}
+  .border-done{border-color:#22E58A;}
+  .border-s-done{border-inline-start-color:#22E58A;}
+  .bg-progress{background-color:#FFB020;}
+  .text-progress{color:#FFB020;}
+  .border-progress{border-color:#FFB020;}
+  .border-s-progress{border-inline-start-color:#FFB020;}
+  .bg-pending{background-color:#33B5E5;}
+  .text-pending{color:#33B5E5;}
+  .border-pending{border-color:#33B5E5;}
+  .border-s-pending{border-inline-start-color:#33B5E5;}
+  .bg-blocked{background-color:#FF4757;}
+  .text-blocked{color:#FF4757;}
+  .border-blocked{border-color:#FF4757;}
+  .border-s-blocked{border-inline-start-color:#FF4757;}
+  .bg-archived{background-color:#5C6B85;}
+  .text-archived{color:#5C6B85;}
+  .border-archived{border-color:#5C6B85;}
+  .border-s-archived{border-inline-start-color:#5C6B85;}
+  .bg-sky{background-color:#33B5E5;}
+  .text-sky{color:#33B5E5;}
+  .border-sky{border-color:#33B5E5;}
+  .border-s-sky{border-inline-start-color:#33B5E5;}
+  .bg-black{background-color:#000000;}
+
+  /* ---- opacity-modifier combos ---- */
+  .bg-archived\/15{background-color:rgba(92,107,133,0.15);}
+  .bg-black\/65{background-color:rgba(0,0,0,0.65);}
+  .bg-blocked\/10{background-color:rgba(255,71,87,0.1);}
+  .bg-blocked\/15{background-color:rgba(255,71,87,0.15);}
+  .bg-blocked\/5{background-color:rgba(255,71,87,0.05);}
+  .bg-done\/10{background-color:rgba(34,229,138,0.1);}
+  .bg-gold\/15{background-color:rgba(241,196,15,0.15);}
+  .bg-sky\/10{background-color:rgba(51,181,229,0.1);}
+  .bg-panel\/70{background-color:rgba(11,63,115,0.7);}
+  .border-blocked\/60{border-color:rgba(255,71,87,0.6);}
+  .text-inkdim\/60{color:rgba(224,224,224,0.6);}
+
+  /* ---- hover: variants ---- */
+  .hover\:bg-blocked\/10:hover{background-color:rgba(255,71,87,0.1);}
+  .hover\:bg-blocked\/20:hover{background-color:rgba(255,71,87,0.2);}
+  .hover\:bg-blocked\/25:hover{background-color:rgba(255,71,87,0.25);}
+  .hover\:bg-done\/10:hover{background-color:rgba(34,229,138,0.1);}
+  .hover\:bg-elev\/40:hover{background-color:rgba(20,80,140,0.4);}
+  .hover\:bg-elev\/60:hover{background-color:rgba(20,80,140,0.6);}
+  .hover\:bg-gold\/25:hover{background-color:rgba(241,196,15,0.25);}
+  .hover\:bg-sky\/10:hover{background-color:rgba(51,181,229,0.1);}
+  .hover\:border-hair2:hover{border-color:#3D6D9E;}
+  .hover\:text-gold:hover{color:#F1C40F;}
+  .hover\:text-ink:hover{color:#FFFFFF;}
+  .hover\:underline:hover{text-decoration:underline;}
+
+  /* ---- typography ---- */
+  .font-body{font-family:'Inter',ui-sans-serif,system-ui,sans-serif;}
+  .font-display{font-family:'Space Grotesk',ui-sans-serif,system-ui,sans-serif;}
+  .font-mono{font-family:'IBM Plex Mono',ui-monospace,SFMono-Regular,monospace;}
+  .font-500{font-weight:500;}
+  .font-600{font-weight:600;}
+  .font-700{font-weight:700;}
+  .antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+  .leading-none{line-height:1;}
+  .leading-snug{line-height:1.375;}
+  .leading-tight{line-height:1.25;}
+  .tracking-wide{letter-spacing:0.025em;}
+  .truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .whitespace-nowrap{white-space:nowrap;}
+  .text-center{text-align:center;}
+  .text-right{text-align:right;}
+  .text-start{text-align:start;}
+  .text-sm{font-size:0.875rem;line-height:1.25rem;}
+  .text-lg{font-size:1.125rem;line-height:1.75rem;}
+  .text-\[10px\]{font-size:10px;}
+  .text-\[10\.5px\]{font-size:10.5px;}
+  .text-\[11px\]{font-size:11px;}
+  .text-\[11\.5px\]{font-size:11.5px;}
+  .text-\[12px\]{font-size:12px;}
+  .text-\[12\.5px\]{font-size:12.5px;}
+  .text-\[13px\]{font-size:13px;}
+  .text-\[13\.5px\]{font-size:13.5px;}
+  .text-\[15px\]{font-size:15px;}
+  .text-\[26px\]{font-size:26px;}
+  .text-\[28px\]{font-size:28px;}
+
+  /* ---- position / overflow / misc ---- */
+  .fixed{position:fixed;}
+  .inset-0{top:0;right:0;bottom:0;left:0;}
+  .z-50{z-index:50;}
+  .overflow-hidden{overflow:hidden;}
+  .overflow-x-auto{overflow-x:auto;}
+  .overflow-y-auto{overflow-y:auto;}
+  .pointer-events-none{pointer-events:none;}
+  .backdrop-blur{backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);}
+  .transition-colors{transition-property:color,background-color,border-color;transition-duration:150ms;transition-timing-function:cubic-bezier(.4,0,.2,1);}
+  .opacity-70{opacity:0.7;}
+  .placeholder\:text-inkdim::placeholder{color:rgba(214,231,247,0.55);}
+  .last\:border-b-0:last-child{border-bottom-width:0;}
+
+  /* ---- responsive (placed last so equal-specificity rules win at breakpoint) ---- */
+  @media (min-width: 640px) {
+    .sm\:block{display:block;}
+    .sm\:flex{display:flex;}
+    .sm\:col-span-2{grid-column:span 2 / span 2;}
+    .sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr));}
+  }
+  @media (min-width: 768px) {
+    .md\:block{display:block;}
+  }
+  @media (min-width: 1024px) {
+    .lg\:col-span-2{grid-column:span 2 / span 2;}
+    .lg\:col-span-3{grid-column:span 3 / span 3;}
+    .lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr));}
+    .lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr));}
+    .lg\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr));}
+  }
+
+  /* ---- Live System Pulse ticker ---- */
+  .pulse-bar { width:100%; overflow:hidden; background:linear-gradient(90deg, rgba(30,62,98,0.92), rgba(11,25,44,0.96)); border-bottom:1px solid rgba(241,196,15,0.22); height:30px; flex-shrink:0; display:flex; align-items:center; position:relative; }
+  .pulse-bar::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:linear-gradient(180deg, #F1C40F, #33B5E5); z-index:1; }
+  .pulse-bar__track { display:flex; white-space:nowrap; animation: pulse-scroll 34s linear infinite; padding-inline-start:1rem; }
+  .pulse-bar:hover .pulse-bar__track { animation-play-state:paused; }
+  @keyframes pulse-scroll { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+  .pulse-bar__item { display:inline-flex; align-items:center; gap:.45rem; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:rgba(214,231,247,0.85); padding-inline-end:2rem; }
+  .pulse-bar__dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; }
+  @media (prefers-reduced-motion: reduce) { .pulse-bar__track { animation:none; overflow-x:auto; } }
+
+  /* ---- Custom hover tooltips ---- */
+  [data-tooltip] { position:relative; }
+  [data-tooltip]:hover::after {
+    content: attr(data-tooltip); position:absolute; left:50%; bottom:calc(100% + 9px); transform:translateX(-50%);
+    background:#0b192c; color:#FFFFFF; font-family:'IBM Plex Mono',monospace; font-size:10.5px;
+    padding:6px 10px; border-radius:6px; white-space:nowrap; border:1px solid rgba(241,196,15,0.35);
+    box-shadow:0 6px 16px rgba(0,0,0,0.45); z-index:30; pointer-events:none;
+  }
+  [data-tooltip]:hover::before {
+    content:''; position:absolute; left:50%; bottom:calc(100% + 4px); transform:translateX(-50%);
+    border:5px solid transparent; border-top-color:#0b192c; z-index:30; pointer-events:none;
+  }
+
+  /* ---- Pulsing risk alert (Critical Vendor Blockers KPI, only when count > 0) ---- */
+  @keyframes pulse-alert-ring {
+    0%,100% { box-shadow: 0 1px 2px rgba(0,10,30,0.30), 0 12px 28px rgba(0,15,40,0.32), 0 0 0 0 rgba(255,71,87,0.55); }
+    50%     { box-shadow: 0 1px 2px rgba(0,10,30,0.30), 0 12px 28px rgba(0,15,40,0.32), 0 0 0 9px rgba(255,71,87,0); }
+  }
+  .kpi-pulse-alert { animation: pulse-alert-ring 2.4s ease-in-out infinite; }
+  @media (prefers-reduced-motion: reduce) { .kpi-pulse-alert { animation:none; box-shadow: 0 0 0 2px rgba(255,71,87,0.5); } }
+
+  /* ---- Vendor severity indicators ---- */
+  .severity-tag { font-family:'IBM Plex Mono',monospace; font-size:9.5px; letter-spacing:.03em; padding:1px 7px; border-radius:9999px; flex-shrink:0; margin-inline-start:.5rem; }
+  .severity-tag--critical { background:rgba(255,71,87,0.18); color:#FF4757; }
+  .severity-tag--high { background:rgba(255,176,32,0.18); color:#FFB020; }
+  .severity-tag--medium { background:rgba(51,181,229,0.18); color:#33B5E5; }
+
+  /* ---- Export Executive Brief (print) ---- */
+  .print-only { display:none; }
+  @media print {
+    .print-only { display:block !important; margin-bottom:24px; }
+    .print-header { padding-bottom:12px; border-bottom:2px solid #000000; }
+    .print-header__title { font-family:'Space Grotesk',sans-serif; font-size:20px; font-weight:700; color:#000; }
+    .print-header__meta { font-family:'IBM Plex Mono',monospace; font-size:11px; color:#444; margin-top:4px; }
+    .pulse-bar, aside, header, .filter-bar, #modalBackdrop, #newProjectBtn, #newTeamBtn, #exportBriefBtn, .filter-clear-btn, .active-filters-row { display:none !important; }
+    body { background:#FFFFFF !important; display:block !important; }
+    main#content { padding:0 !important; overflow:visible !important; }
+    .bg-panel, .card, .chart-card { background:#FFFFFF !important; backdrop-filter:none !important; -webkit-backdrop-filter:none !important; box-shadow:none !important; border:1px solid #CCCCCC !important; }
+    .text-ink, .chart-title, h1, h2, .health-card__value, .donut-total { color:#000000 !important; }
+    .text-inkdim, .hbar-label, .deadline-row__meta { color:#555555 !important; }
+  }
+</style>
+</head>
+<body class="font-body text-ink antialiased">
+
+<div class="print-only print-header">
+  <div class="print-header__title">Juhayna IT &amp; SAP — Executive Brief</div>
+  <div id="printTimestamp" class="print-header__meta"></div>
+</div>
+
+<div class="pulse-bar">
+  <div class="pulse-bar__track" id="pulseBarTrack"></div>
+</div>
+
+<div id="app" class="min-h-screen flex" style="flex:1; min-height:0;">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="w-64 shrink-0 bg-panel border-e border-hair flex flex-col" style="padding-top: env(safe-area-inset-top,0px);">
+    <div class="px-6 py-6 border-b border-hair brand-band">
+      <div class="flex items-center gap-2.5">
+        <div class="logo-plate shrink-0">
+          <img src="data:image/png;base64,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" alt="Juhayna" class="logo-img">
+        </div>
+      </div>
+      <div class="text-[11px] text-inkdim font-mono tracking-wide mt-2.5">IT &amp; SAP PROJECT PORTAL</div>
+    </div>
+
+    <nav id="nav" class="flex-1 overflow-y-auto py-2 px-2 space-y-0.5"></nav>
+
+    <div class="px-2 pb-2">
+      <button id="newTeamBtn" class="hidden w-full items-center justify-center gap-1.5 font-mono text-[12px] px-3 py-2.5 border border-dashed border-sky text-sky hover:bg-sky/10 transition-colors focus-ring">
+        <span>+</span><span>New Team</span>
+      </button>
+    </div>
+
+    <div class="px-5 py-5 border-t border-hair space-y-3">
+      <div>
+        <label class="text-[11px] font-mono text-inkdim block mb-1.5">ROLE / VIEW</label>
+        <select id="roleSelect" class="w-full bg-elev border border-hair2 text-sm px-2.5 py-1.5 text-ink focus-ring">
+          <option value="engineer">Engineer</option>
+          <option value="lineManager">Line Manager</option>
+          <option value="deptManager">Department Manager</option>
+        </select>
+      </div>
+      <div class="text-[11px] font-mono text-inkdim pt-1 flex items-center gap-1.5">
+        <span class="w-1.5 h-1.5 rounded-full bg-done inline-block"></span>
+        <span>System nominal · 0 factory impact</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <div class="flex-1 flex flex-col min-w-0">
+
+    <!-- TOP BAR -->
+    <header class="h-16 shrink-0 border-b border-hair topbar-gradient backdrop-blur flex items-center justify-between px-8 gap-4">
+      <div class="min-w-0">
+        <h1 id="sectionTitle" class="font-display font-600 text-lg text-ink truncate">Operations Overview</h1>
+        <div id="sectionSub" class="text-[12px] text-inkdim font-mono truncate">All teams · 35 branch &amp; manufacturing sites</div>
+      </div>
+      <div class="flex items-center gap-3 shrink-0">
+        <input id="searchInput" type="text" placeholder="Search projects, owners, vendors…" class="hidden md:block w-56 bg-elev border border-hair2 text-sm px-3 py-1.5 text-ink placeholder:text-inkdim focus-ring">
+        <button id="exportBriefBtn" class="hidden sm:flex items-center gap-1.5 bg-sky/10 border border-sky text-sky text-[13px] font-mono px-4 py-2 hover:bg-sky/10 transition-colors focus-ring">
+          <span>⭳</span><span>Export Executive Brief</span>
+        </button>
+        <button id="newProjectBtn" class="hidden items-center gap-1.5 bg-gold/15 border border-gold text-gold text-[13px] font-mono px-4 py-2 hover:bg-gold/25 transition-colors focus-ring">
+          <span>+</span><span>New Project</span>
+        </button>
+        <div class="text-right hidden sm:block">
+          <div id="clock" class="font-mono text-sm text-ink"></div>
+          <div id="roleBadge" class="text-[11px] font-mono text-gold"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- TOAST -->
+    <div id="toastWrap" class="px-8 pt-3 pointer-events-none"></div>
+
+    <!-- CONTENT -->
+    <main id="content" class="flex-1 overflow-y-auto px-8 py-8"></main>
+  </div>
+</div>
+
+<!-- ============ PROJECT DETAIL / EDIT MODAL ============ -->
+<div id="modalBackdrop" class="fixed inset-0 bg-black/65 hidden items-center justify-center z-50 p-4 overflow-y-auto">
+  <div id="modalCard" class="bg-panel border border-hair2 w-full max-w-xl settle-in my-6">
+    <div class="flex items-start justify-between px-6 py-5 border-b border-hair">
+      <div>
+        <div id="modalTeam" class="text-[11px] font-mono text-gold tracking-wide"></div>
+        <h3 id="modalTitle" class="font-display font-600 text-lg"></h3>
+      </div>
+      <button id="modalClose" class="text-inkdim hover:text-ink focus-ring px-2 text-lg leading-none">&times;</button>
+    </div>
+    <div id="modalBody" class="px-6 py-6 space-y-4"></div>
+  </div>
+</div>
+
+<script>
+/* ======================= DATA MODEL ======================= */
+const VENDORS = ['Fortinet','Microsoft','Lenovo','Springdell','Huawei','SAP Basis','Local ISP','Other'];
+
+let TEAMS = [
+  { id:'network', name:'Network & Infrastructure Security', short:'Network', ownersLabel:'Aboelmagd & Nour', owners:['Aboelmagd','Nour'], focus:'SD-WAN migration, FortiGate firewalls, Wi-Fi, fiber links, UPS — 35 branch & manufacturing sites', prefix:'NW' },
+  { id:'systems',  name:'Systems SW/HW & Cloud', short:'Systems', ownersLabel:'Ismail & Hla', owners:['Ismail','Hla'], focus:'Enterprise servers, Microsoft Intune MDM, Data Domain backup, Huawei Cloud, HA environments', prefix:'SY' },
+  { id:'support',  name:'Technical Support & End-User Devices', short:'Support', ownersLabel:'Kotb & Abdelrahman', owners:['Kotb','Abdelrahman'], focus:'1,400+ client devices, HP/Dell/Lenovo lifecycle, Springdell MDM, meeting rooms, IP telephony', prefix:'TS' },
+  { id:'sap',      name:'SAP Technical & Basis', short:'SAP', ownersLabel:'Mandour (Basis)', owners:['Mandour'], focus:'SAP Basis admin, SAP SSO, FUE optimization, S/4HANA infra upgrade, EWM support', prefix:'SAP' },
+  { id:'apps',     name:'Application Teams', short:'Applications', ownersLabel:'Application Teams', owners:['App Team'], focus:'Internal platforms, integrations, and business application delivery across departments', prefix:'APP' },
+];
+function teamById(id){ return TEAMS.find(t => t.id === id); }
+
+const STATUS = {
+  pending:  { label:'Pending',     color:'pending'  },
+  progress: { label:'In Progress', color:'progress' },
+  done:     { label:'Done',        color:'done'     },
+};
+const STATUS_ORDER = ['pending','progress','done'];
+
+function mkBlocker(text, impactedTeams, reportedDate){
+  return { text, impactedTeams: impactedTeams || [], reportedDate: reportedDate, status:'open', resolvedDate:null };
+}
+
+let PROJECTS = [
+  { id:'NW-01', team:'network', name:'SD-WAN Migration — Phase 2 (12 branches)', owner:'Aboelmagd', vendor:'Local ISP', status:'progress', progress:55, start:'2026-06-01', end:'2026-10-15', blocker:null, archived:false },
+  { id:'NW-02', team:'network', name:'FortiGate Firewall Refresh — Factory Core', owner:'Nour', vendor:'Fortinet', status:'progress', progress:40, start:'2026-07-10', end:'2026-09-30', blocker: mkBlocker('ISP fiber handoff delayed by vendor, +2 weeks', ['systems'], '2026-08-18'), archived:false },
+  { id:'NW-03', team:'network', name:'Wi-Fi Deployment — Distribution Centers', owner:'Nour', vendor:'Other', status:'pending', progress:0, start:'2026-10-01', end:'2026-11-20', blocker:null, archived:false },
+  { id:'NW-04', team:'network', name:'Fiber Link Upgrade — Alexandria Plant', owner:'Aboelmagd', vendor:'Local ISP', status:'done', progress:100, start:'2026-04-01', end:'2026-06-05', blocker:null, archived:false },
+  { id:'NW-05', team:'network', name:'UPS Preventive Maintenance — Q3 Cycle', owner:'Nour', vendor:'Other', status:'done', progress:100, start:'2026-07-01', end:'2026-07-20', blocker:null, archived:false },
+  { id:'NW-06', team:'network', name:'Branch Firewall Rule Standardization', owner:'Aboelmagd', vendor:'Fortinet', status:'pending', progress:0, start:'2026-11-01', end:'2026-12-15', blocker:null, archived:false },
+
+  { id:'SY-01', team:'systems', name:'Huawei Cloud Integration — DR Site', owner:'Ismail', vendor:'Huawei', status:'progress', progress:60, start:'2026-05-15', end:'2026-10-30', blocker: mkBlocker('Cross-region licensing approval pending with vendor legal', ['sap'], '2026-08-05'), archived:false },
+  { id:'SY-02', team:'systems', name:'Microsoft Intune MDM Rollout — All Sites', owner:'Hla', vendor:'Microsoft', status:'progress', progress:70, start:'2026-06-20', end:'2026-09-25', blocker:null, archived:false },
+  { id:'SY-03', team:'systems', name:'Data Domain Backup Capacity Expansion', owner:'Ismail', vendor:'Other', status:'done', progress:100, start:'2026-03-01', end:'2026-05-10', blocker:null, archived:false },
+  { id:'SY-04', team:'systems', name:'HA Server Cluster — ERP Environment', owner:'Hla', vendor:'Other', status:'pending', progress:0, start:'2026-10-05', end:'2027-01-15', blocker:null, archived:false },
+  { id:'SY-05', team:'systems', name:'Enterprise Server OS Patch Cycle — Q3', owner:'Ismail', vendor:'Microsoft', status:'done', progress:100, start:'2026-07-01', end:'2026-07-15', blocker:null, archived:false },
+
+  { id:'TS-01', team:'support', name:'Laptop Refresh — 1,400+ Client Devices', owner:'Kotb', vendor:'Lenovo', status:'progress', progress:35, start:'2026-04-01', end:'2026-12-20', blocker: mkBlocker('Lenovo shipment backlog, revised ETA from vendor', ['support'], '2026-08-22'), archived:false },
+  { id:'TS-02', team:'support', name:'Springdell MDM — Handheld Fleet Onboarding', owner:'Abdelrahman', vendor:'Springdell', status:'progress', progress:65, start:'2026-06-10', end:'2026-09-01', blocker:null, archived:false },
+  { id:'TS-03', team:'support', name:'Meeting Room AV Standardization — HQ', owner:'Kotb', vendor:'Other', status:'done', progress:100, start:'2026-03-15', end:'2026-05-30', blocker:null, archived:false },
+  { id:'TS-04', team:'support', name:'IP Telephony Migration — Regional Offices', owner:'Abdelrahman', vendor:'Other', status:'pending', progress:0, start:'2026-11-10', end:'2027-01-31', blocker:null, archived:false },
+  { id:'TS-05', team:'support', name:'Desktop Hardware Lifecycle Audit', owner:'Kotb', vendor:'Lenovo', status:'pending', progress:0, start:'2026-10-15', end:'2026-11-30', blocker:null, archived:false },
+
+  { id:'SAP-01', team:'sap', name:'S/4HANA Infrastructure Upgrade', owner:'Mandour', vendor:'SAP Basis', status:'progress', progress:45, start:'2026-05-01', end:'2026-12-01', blocker: mkBlocker('SAP vendor patch validation delayed ahead of cutover window', ['systems','network'], '2026-08-11'), archived:false },
+  { id:'SAP-02', team:'sap', name:'SAP Single Sign-On Rollout', owner:'Mandour', vendor:'SAP Basis', status:'progress', progress:75, start:'2026-07-01', end:'2026-09-20', blocker:null, archived:false },
+  { id:'SAP-03', team:'sap', name:'FUE License Optimization Review', owner:'Mandour', vendor:'SAP Basis', status:'done', progress:100, start:'2026-04-10', end:'2026-06-01', blocker:null, archived:false },
+  { id:'SAP-04', team:'sap', name:'EWM Support — Warehouse Process Tuning', owner:'Mandour', vendor:'SAP Basis', status:'pending', progress:0, start:'2026-10-20', end:'2026-12-10', blocker:null, archived:false },
+
+  { id:'APP-01', team:'apps', name:'Factory Floor Portal — Integration Layer', owner:'App Team', vendor:'Other', status:'progress', progress:50, start:'2026-06-15', end:'2026-10-10', blocker:null, archived:false },
+  { id:'APP-02', team:'apps', name:'Vendor Delay Tracking Module', owner:'App Team', vendor:'Other', status:'pending', progress:0, start:'2026-10-01', end:'2026-11-25', blocker:null, archived:false },
+  { id:'APP-03', team:'apps', name:'RBAC Access Review Automation', owner:'App Team', vendor:'Other', status:'done', progress:100, start:'2026-05-01', end:'2026-06-20', blocker:null, archived:false },
+];
+
+/* ======================= STATE ======================= */
+const STORE_KEY = 'juhayna_portal_state_v4';
+let state = { role:'lineManager', activeTeam:'overview', search:'', showArchived:false, viewMode:'board', blockerFilter:'open', filters:{ team:null, status:null, vendor:null } };
+function loadState(){
+  try {
+    const raw = localStorage.getItem(STORE_KEY);
+    if (raw) {
+      const saved = JSON.parse(raw);
+      state = Object.assign(state, saved.state || {});
+      if (Array.isArray(saved.projects) && saved.projects.length) PROJECTS = saved.projects;
+      if (Array.isArray(saved.teams) && saved.teams.length) TEAMS = saved.teams;
+    }
+  } catch(e) { /* ignore corrupt storage */ }
+}
+function saveState(){
+  try { localStorage.setItem(STORE_KEY, JSON.stringify({ state, projects: PROJECTS, teams: TEAMS })); }
+  catch(e) { /* storage unavailable — continue without persistence */ }
+}
+
+const ROLE_LABEL = {
+  engineer:    'Engineer',
+  lineManager: 'Line Manager',
+  deptManager: 'Department Manager',
+};
+/* RBAC matrix
+   engineer    — advance own team's task one status step forward. No create/edit/delete/blocker actions.
+   lineManager — full CRUD: create, edit all fields, set any status, archive, delete, log & resolve blockers.
+   deptManager — read-only across all teams; may archive a project only once it is Done; views blocker log read-only. */
+function canCreate(role){ return role === 'lineManager'; }
+function canEditDetails(role){ return role === 'lineManager'; }
+function canSetAnyStatus(role){ return role === 'lineManager'; }
+function canAdvanceOnly(role){ return role === 'engineer'; }
+function canDelete(role){ return role === 'lineManager'; }
+function canArchive(role, p){ return role === 'lineManager' || (role === 'deptManager' && p.status === 'done'); }
+function canManageBlockers(role){ return role === 'lineManager'; }
+
+/* ======================= CROSS-FILTER (Power BI–style slicers) ======================= */
+function toggleFilter(key, value){
+  state.filters[key] = state.filters[key] === value ? null : value;
+  saveState();
+  render();
+}
+function clearFilters(){
+  state.filters = { team:null, status:null, vendor:null };
+  saveState();
+  render();
+}
+function hasActiveFilters(){
+  return !!(state.filters.team || state.filters.status || state.filters.vendor);
+}
+function applyOverviewFilters(list){
+  let r = list;
+  if (state.filters.team) r = r.filter(p => p.team === state.filters.team);
+  if (state.filters.status) r = r.filter(p => p.status === state.filters.status);
+  if (state.filters.vendor) r = r.filter(p => p.vendor === state.filters.vendor);
+  return r;
+}
+
+/* ======================= TOAST ======================= */
+function toast(msg, tone){
+  const wrap = document.getElementById('toastWrap');
+  const t = document.createElement('div');
+  const toneClass = tone === 'danger' ? 'border-blocked text-blocked' : tone === 'warn' ? 'border-gold text-gold' : 'border-done text-done';
+  t.className = `toast-in pointer-events-auto inline-block bg-panel border ${toneClass} px-3.5 py-2 text-[12.5px] font-mono mb-2`;
+  t.textContent = msg;
+  wrap.innerHTML = '';
+  wrap.appendChild(t);
+  setTimeout(() => { t.remove(); }, 2600);
+}
+
+/* ======================= ID GENERATION ======================= */
+function nextId(teamId){
+  const team = teamById(teamId);
+  const nums = PROJECTS.filter(p => p.team === teamId).map(p => {
+    const m = p.id.match(/-(\d+)$/); return m ? parseInt(m[1],10) : 0;
+  });
+  const next = (nums.length ? Math.max(...nums) : 0) + 1;
+  return `${team.prefix}-${String(next).padStart(2,'0')}`;
+}
+function todayISO(){ return new Date().toISOString().slice(0,10); }
+
+/* ======================= TEAM CREATION HELPERS ======================= */
+function canManageTeams(role){ return role === 'lineManager'; }
+
+function slugifyTeamId(name){
+  let base = name.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/(^-+|-+$)/g, '');
+  if (!base) base = 'team';
+  let id = base, i = 2;
+  const existing = new Set(TEAMS.map(t => t.id));
+  while (existing.has(id)) { id = `${base}-${i++}`; }
+  return id;
+}
+function makeTeamPrefix(name){
+  let base = name.split(/\s+/).filter(w => /[A-Za-z]/.test(w)).map(w => w[0].toUpperCase()).join('').slice(0, 3);
+  if (!base) base = 'TM';
+  let prefix = base, i = 1;
+  const existing = new Set(TEAMS.map(t => t.prefix));
+  while (existing.has(prefix)) { prefix = base + (i++); }
+  return prefix;
+}
+function parseOwnersInput(raw){
+  return raw.split(/[,&/]/).map(s => s.trim()).filter(Boolean);
+}
+function shortLabel(name){
+  return name.length <= 14 ? name : name.split(/\s+/)[0];
+}
+
+/* ======================= RENDER: NAV ======================= */
+function renderNav(){
+  const nav = document.getElementById('nav');
+  const openBlockers = PROJECTS.filter(p => p.blocker && p.blocker.status === 'open').length;
+  const items = [
+    { id:'overview', name:'Overview', icon:'◧' },
+    { id:'blockers', name:'Blockages & Vendor Management', icon:'⚠', badge: openBlockers },
+  ].concat(TEAMS.map(t => ({ id:t.id, name:t.name, icon:'▤' })));
+
+  nav.innerHTML = items.map(it => `
+    <button data-nav="${it.id}" data-active="${state.activeTeam === it.id}"
+      class="nav-item w-full text-start px-4 py-3 flex items-center gap-2.5 text-[13.5px] text-inkdim hover:text-ink hover:bg-elev/60 transition-colors focus-ring">
+      <span class="font-mono text-[11px] text-inkdim shrink-0">${it.icon}</span>
+      <span class="truncate flex-1">${it.name}</span>
+      ${it.badge ? `<span class="font-mono text-[10.5px] text-blocked border border-blocked px-1.5 shrink-0 nav-badge-glow">${it.badge}</span>` : ''}
+    </button>
+  `).join('');
+  nav.querySelectorAll('[data-nav]').forEach(btn => {
+    btn.addEventListener('click', () => { state.activeTeam = btn.dataset.nav; state.showArchived = false; saveState(); render(); });
+  });
+
+  const newTeamBtn = document.getElementById('newTeamBtn');
+  newTeamBtn.style.display = canManageTeams(state.role) ? 'flex' : 'none';
+}
+
+/* ======================= RENDER: TOP BAR ======================= */
+function renderTopBar(){
+  const title = document.getElementById('sectionTitle');
+  const sub = document.getElementById('sectionSub');
+  if (state.activeTeam === 'overview') {
+    title.textContent = 'Operations Overview';
+    sub.textContent = 'All teams · 35 branch & manufacturing sites';
+  } else if (state.activeTeam === 'blockers') {
+    title.textContent = 'Blockages & Vendor Management';
+    sub.textContent = 'Cross-functional log · impacted teams · resolution status';
+  } else {
+    const t = teamById(state.activeTeam);
+    title.textContent = t.name;
+    sub.textContent = t.focus;
+  }
+  document.getElementById('roleBadge').textContent = ROLE_LABEL[state.role].toUpperCase();
+
+  const newBtn = document.getElementById('newProjectBtn');
+  newBtn.style.display = (canCreate(state.role) && state.activeTeam !== 'blockers') ? 'inline-flex' : 'none';
+
+  const search = document.getElementById('searchInput');
+  search.style.display = state.activeTeam === 'blockers' ? 'none' : '';
+}
+
+function tickClock(){
+  const el = document.getElementById('clock');
+  const now = new Date();
+  el.textContent = now.toLocaleString('en-GB', { weekday:'short', hour:'2-digit', minute:'2-digit', day:'2-digit', month:'short' });
+}
+
+/* ======================= RENDER: OVERVIEW ======================= */
+function computeKpis(list){
+  const total = list.length;
+  const byStatus = { pending:0, progress:0, done:0 };
+  let blocked = 0;
+  list.forEach(p => { byStatus[p.status]++; if (p.blocker && p.blocker.status === 'open') blocked++; });
+  return { total, byStatus, blocked };
+}
+
+/* ======================= ANALYTICS CHART DATA + RENDERERS ======================= */
+function donutChartHtml(kpis, large){
+  const { total, byStatus } = kpis;
+  if (!total) return `<div class="chart-empty">No projects match the current filters.</div>`;
+  const donePct = (byStatus.done / total) * 100;
+  const progPct = (byStatus.progress / total) * 100;
+  const pendPct = 100 - donePct - progPct;
+  const stop1 = donePct;
+  const stop2 = donePct + progPct;
+  const gradient = `conic-gradient(var(--c-done) 0% ${stop1}%, var(--c-progress) ${stop1}% ${stop2}%, var(--c-pending) ${stop2}% 100%)`;
+  const sizeClass = large ? 'donut-chart donut-chart--lg' : 'donut-chart';
+
+  const legendItem = (key, dotClass, label, count, pct) => {
+    const isActive = state.filters.status === key;
+    const dimmed = state.filters.status && !isActive;
+    return `
+      <button data-filter-status="${key}" data-tooltip="${count} project${count === 1 ? '' : 's'} · ${Math.round(pct)}% of total" class="legend-item legend-item--clickable focus-ring${dimmed ? ' legend-item--dimmed' : ''}${isActive ? ' legend-item--active' : ''}">
+        <span class="legend-dot bg-${dotClass}"></span>${label}<span class="legend-count">${count} · ${Math.round(pct)}%</span>
+      </button>`;
+  };
+
+  return `
+    <div class="donut-wrap${large ? ' donut-wrap--hero' : ''}">
+      <div class="${sizeClass}" style="background:${gradient}">
+        <div class="donut-hole">
+          <div class="donut-total">${total}</div>
+          <div class="donut-total-label">Total</div>
+        </div>
+      </div>
+      <div class="donut-legend">
+        ${legendItem('done', 'done', 'Done', byStatus.done, donePct)}
+        ${legendItem('progress', 'progress', 'In Progress', byStatus.progress, progPct)}
+        ${legendItem('pending', 'pending', 'Pending', byStatus.pending, pendPct)}
+      </div>
+    </div>`;
+}
+
+function severityTag(count){
+  if (count >= 3) return '<span class="severity-tag severity-tag--critical">CRITICAL</span>';
+  if (count === 2) return '<span class="severity-tag severity-tag--high">HIGH</span>';
+  return '<span class="severity-tag severity-tag--medium">MEDIUM</span>';
+}
+
+function hbarChartHtml(items, colorCss, emptyMessage, filterType, showSeverity){
+  if (!items.length) return `<div class="chart-empty">${emptyMessage}</div>`;
+  const max = Math.max(1, ...items.map(i => i.value));
+  return items.map(i => {
+    const tooltip = `data-tooltip="${i.value} project${i.value === 1 ? '' : 's'} affected"`;
+    const severity = showSeverity ? severityTag(i.value) : '';
+    if (!filterType) {
+      return `
+        <div class="hbar-row" ${tooltip}>
+          <div class="hbar-label" title="${i.label}">${i.label}</div>
+          <div class="hbar-track"><div class="hbar-fill" style="width:${Math.round((i.value / max) * 100)}%; background:${colorCss};"></div></div>
+          <div class="hbar-value">${i.value}</div>${severity}
+        </div>`;
+    }
+    const isActive = state.filters[filterType] === i.key;
+    const dimmed = state.filters[filterType] && !isActive;
+    return `
+      <button data-filter-${filterType}="${i.key}" ${tooltip} class="hbar-row hbar-row--clickable focus-ring${dimmed ? ' hbar-row--dimmed' : ''}${isActive ? ' hbar-row--active' : ''}">
+        <div class="hbar-label" title="${i.label}">${i.label}</div>
+        <div class="hbar-track"><div class="hbar-fill" style="width:${Math.round((i.value / max) * 100)}%; background:${colorCss};"></div></div>
+        <div class="hbar-value">${i.value}</div>${severity}
+      </button>`;
+  }).join('');
+}
+
+function filterBarHtml(){
+  const teamChips = TEAMS.map(t => `<button data-filter-team="${t.id}" data-active="${state.filters.team === t.id}" class="filter-chip focus-ring">${t.short}</button>`).join('');
+  const statusChips = STATUS_ORDER.map(k => `<button data-filter-status="${k}" data-active="${state.filters.status === k}" class="filter-chip focus-ring">${STATUS[k].label}</button>`).join('');
+  const vendorOpts = VENDORS.map(v => `<option value="${v}" ${state.filters.vendor === v ? 'selected' : ''}>${v}</option>`).join('');
+
+  const activeChips = [];
+  if (state.filters.team) activeChips.push(`Team: ${teamById(state.filters.team).short}`);
+  if (state.filters.status) activeChips.push(`Status: ${STATUS[state.filters.status].label}`);
+  if (state.filters.vendor) activeChips.push(`Vendor: ${state.filters.vendor}`);
+
+  return `
+    <div class="filter-bar">
+      <div class="filter-bar__row">
+        <span class="filter-bar__label">Team</span>
+        <div class="filter-chip-group">${teamChips}</div>
+      </div>
+      <div class="filter-bar__row">
+        <span class="filter-bar__label">Status</span>
+        <div class="filter-chip-group">${statusChips}</div>
+      </div>
+      <div class="filter-bar__row">
+        <span class="filter-bar__label">Vendor</span>
+        <select id="filterVendorSelect" class="field-input filter-vendor-select">
+          <option value="">All Vendors</option>
+          ${vendorOpts}
+        </select>
+      </div>
+      ${hasActiveFilters() ? `<button id="clearFiltersBtn" class="filter-clear-btn focus-ring">Clear filters ✕</button>` : ''}
+    </div>
+    ${activeChips.length ? `
+    <div class="active-filters-row">
+      <span>Cross-filtering by:</span>
+      ${activeChips.map(c => `<span class="active-filter-chip">${c}</span>`).join('')}
+    </div>` : `<div class="filter-hint">Click a status, team, or vendor bar below to cross-filter this entire dashboard.</div>`}
+  `;
+}
+
+function renderOverview(container){
+  const allActive = PROJECTS.filter(p => !p.archived);
+  const active = applyOverviewFilters(allActive);
+  const kpis = computeKpis(active);
+  const archivedCount = PROJECTS.filter(p => p.archived).length;
+
+  const kpiDefs = [
+    { label:'Active Projects', val: kpis.total, color:'sky' },
+    { label:'In Progress', val: kpis.byStatus.progress, color:'progress' },
+    { label:'Completed', val: kpis.byStatus.done, color:'done' },
+    { label:'Critical Vendor Blockers', val: kpis.blocked, color:'blocked', alert: kpis.blocked > 0 },
+  ];
+  const kpiHtml = kpiDefs.map(k => `
+    <div class="card bg-panel border border-hair border-s-${k.color} px-5 py-4 settle-in${k.alert ? ' kpi-pulse-alert' : ''}">
+      <div class="text-[28px] font-mono font-600 leading-none text-ink">${String(k.val).padStart(2,'0')}</div>
+      <div class="text-[12px] text-inkdim mt-1.5">${k.label}</div>
+    </div>
+  `).join('');
+
+  const workload = TEAMS.map(t => ({ key: t.id, label: t.short, value: active.filter(p => p.team === t.id).length }));
+
+  const vendorCounts = {};
+  active.filter(p => p.blocker && p.blocker.status === 'open').forEach(p => {
+    vendorCounts[p.vendor] = (vendorCounts[p.vendor] || 0) + 1;
+  });
+  const vendorImpact = Object.entries(vendorCounts).sort((a, b) => b[1] - a[1]).map(([vendor, count]) => ({ key: vendor, label: vendor, value: count }));
+
+  const teamRows = TEAMS.map(t => {
+    const list = active.filter(p => p.team === t.id);
+    const k = computeKpis(list);
+    const pct = n => k.total ? Math.round((n / k.total) * 100) : 0;
+    const highlighted = state.filters.team === t.id;
+    return `
+    <div class="border-b border-hair py-3.5 last:border-b-0${highlighted ? ' team-row--highlighted' : ''}">
+      <div class="flex items-center justify-between mb-2 gap-3">
+        <button data-nav-team="${t.id}" class="text-[13.5px] font-display font-600 text-ink hover:text-gold transition-colors text-start focus-ring">${t.name}</button>
+        <span class="text-[11px] font-mono text-inkdim shrink-0">${k.total} projects</span>
+      </div>
+      <div class="flex h-1.5 w-full overflow-hidden bg-elev">
+        <div class="kpi-bar bg-pending" style="width:${pct(k.byStatus.pending)}%"></div>
+        <div class="kpi-bar bg-progress" style="width:${pct(k.byStatus.progress)}%"></div>
+        <div class="kpi-bar bg-done" style="width:${pct(k.byStatus.done)}%"></div>
+      </div>
+      <div class="flex items-center justify-between mt-1.5 text-[11px] font-mono text-inkdim">
+        <span>${t.ownersLabel}</span>
+        ${k.blocked ? `<span class="text-blocked">${k.blocked} blocked</span>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+
+  const blockerList = active.filter(p => p.blocker && p.blocker.status === 'open');
+  const blockerHtml = blockerList.length ? blockerList.map(p => {
+    const t = teamById(p.team);
+    return `
+    <div class="border-s-2 border-blocked bg-blocked/5 px-3.5 py-2.5">
+      <div class="flex items-center justify-between gap-2">
+        <span class="text-[13px] text-ink font-500">${p.name}</span>
+        <span class="text-[10px] font-mono text-inkdim shrink-0">${p.id}</span>
+      </div>
+      <div class="text-[12px] text-blocked mt-0.5">${p.blocker.text}</div>
+      <div class="text-[11px] font-mono text-inkdim mt-1">${t.name} · ${p.owner} · ${p.vendor}</div>
+    </div>`;
+  }).join('') : `<div class="text-sm text-inkdim px-1 py-2">No active blockers${hasActiveFilters() ? ' match the current filters' : ''}.</div>`;
+
+  container.innerHTML = `
+    ${filterBarHtml()}
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">${kpiHtml}</div>
+
+    <h2 class="font-display font-600 text-sm text-ink mb-4">Analytics &amp; Progress Charts</h2>
+    <div class="charts-grid mb-8">
+      <div class="chart-card">
+        <div class="chart-title">Project Status Breakdown</div>
+        ${donutChartHtml(kpis)}
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Team Workload</div>
+        ${hbarChartHtml(workload, 'linear-gradient(90deg, var(--c-sky), var(--c-gold))', 'No active projects.', 'team')}
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Vendor Delay Impact</div>
+        ${hbarChartHtml(vendorImpact, 'linear-gradient(90deg, rgba(255,71,87,0.55), var(--c-blocked))', 'No vendor delays currently.', 'vendor', true)}
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+      <div class="lg:col-span-3 bg-panel border border-hair p-6">
+        <h2 class="font-display font-600 text-sm text-ink mb-2">Status by Team</h2>
+        <div class="flex items-center gap-4 text-[11px] font-mono text-inkdim mb-3">
+          <span class="flex items-center gap-1.5"><span class="w-2 h-2 bg-pending inline-block"></span>Pending</span>
+          <span class="flex items-center gap-1.5"><span class="w-2 h-2 bg-progress inline-block"></span>In Progress</span>
+          <span class="flex items-center gap-1.5"><span class="w-2 h-2 bg-done inline-block"></span>Done</span>
+        </div>
+        ${teamRows}
+      </div>
+      <div class="lg:col-span-2 bg-panel border border-hair p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="font-display font-600 text-sm text-ink">Vendor Delays &amp; Blockages</h2>
+          <button id="viewBlockersLog" class="text-[11px] font-mono text-gold hover:underline focus-ring">View full log →</button>
+        </div>
+        <div class="space-y-3 max-h-[380px] overflow-y-auto pe-1">${blockerHtml}</div>
+      </div>
+    </div>
+
+    <div class="mt-8 bg-panel border border-hair px-6 py-5 flex items-center justify-between flex-wrap gap-2 footer-bar">
+      <div class="text-[12px] text-inkdim">
+        <span class="text-gold font-mono">◧ </span>
+        Zero impact on factory operations & supply chain · RBAC enforced across Engineers, Line Managers, and Department Managers.
+      </div>
+      <div class="text-[11px] font-mono text-inkdim shrink-0">${archivedCount} archived</div>
+    </div>
+  `;
+
+  container.querySelectorAll('[data-nav-team]').forEach(btn => {
+    btn.addEventListener('click', () => { state.activeTeam = btn.dataset.navTeam; saveState(); render(); });
+  });
+  container.querySelectorAll('[data-filter-team]').forEach(btn => {
+    btn.addEventListener('click', () => toggleFilter('team', btn.dataset.filterTeam));
+  });
+  container.querySelectorAll('[data-filter-status]').forEach(btn => {
+    btn.addEventListener('click', () => toggleFilter('status', btn.dataset.filterStatus));
+  });
+  container.querySelectorAll('[data-filter-vendor]').forEach(btn => {
+    btn.addEventListener('click', () => toggleFilter('vendor', btn.dataset.filterVendor));
+  });
+  const vendorSelect = container.querySelector('#filterVendorSelect');
+  if (vendorSelect) vendorSelect.addEventListener('change', () => { state.filters.vendor = vendorSelect.value || null; saveState(); render(); });
+  const clearBtn = container.querySelector('#clearFiltersBtn');
+  if (clearBtn) clearBtn.addEventListener('click', clearFilters);
+  const logLink = container.querySelector('#viewBlockersLog');
+  if (logLink) logLink.addEventListener('click', () => { state.activeTeam = 'blockers'; saveState(); render(); });
+}
+
+/* ======================= RENDER: BLOCKAGES & VENDOR DELAYS LOG ======================= */
+function renderBlockersPage(container){
+  const all = PROJECTS.filter(p => p.blocker);
+  const open = all.filter(p => p.blocker.status === 'open');
+  const resolved = all.filter(p => p.blocker.status === 'resolved');
+  const filterList = state.blockerFilter === 'open' ? open : state.blockerFilter === 'resolved' ? resolved : all;
+
+  const tabs = [
+    { key:'open', label:`Open (${open.length})` },
+    { key:'resolved', label:`Resolved (${resolved.length})` },
+    { key:'all', label:`All (${all.length})` },
+  ];
+  const tabsHtml = tabs.map(t => `
+    <button data-blocker-tab="${t.key}" data-active="${state.blockerFilter === t.key}"
+      class="tab-btn font-mono text-[12.5px] px-3 py-1.5 border-b-2 border-transparent text-inkdim hover:text-ink transition-colors focus-ring">${t.label}</button>`).join('');
+
+  const rows = filterList.map(p => {
+    const t = teamById(p.team);
+    const b = p.blocker;
+    const impacted = (b.impactedTeams||[]).map(tid => `<span class="chip">${teamById(tid) ? teamById(tid).name : tid}</span>`).join(' ') || '<span class="text-inkdim">—</span>';
+    const statusBadge = b.status === 'open'
+      ? `<span class="font-mono text-[11px] text-blocked border border-blocked px-1.5">OPEN</span>`
+      : `<span class="font-mono text-[11px] text-done border border-done px-1.5">RESOLVED</span>`;
+    return `
+      <tr>
+        <td class="font-mono text-inkdim">${p.id}</td>
+        <td>
+          <button data-open-project="${p.id}" class="text-ink hover:text-gold transition-colors text-start focus-ring">${p.name}</button>
+        </td>
+        <td class="whitespace-nowrap">${t.name}</td>
+        <td class="whitespace-nowrap font-mono">${p.owner}</td>
+        <td class="whitespace-nowrap"><span class="chip chip-gold">${p.vendor}</span></td>
+        <td class="max-w-[240px]">${b.text}</td>
+        <td class="whitespace-nowrap">${impacted}</td>
+        <td class="font-mono whitespace-nowrap">${b.reportedDate || '—'}</td>
+        <td>${statusBadge}</td>
+        <td class="whitespace-nowrap">
+          ${b.status === 'open' && canManageBlockers(state.role) ? `<button data-resolve="${p.id}" class="font-mono text-[11.5px] px-2 py-1 border border-done text-done hover:bg-done/10 transition-colors focus-ring">Resolve</button>` : ''}
+          ${b.status === 'resolved' ? `<span class="font-mono text-[11px] text-inkdim">${b.resolvedDate || ''}</span>` : ''}
+        </td>
+      </tr>`;
+  }).join('');
+
+  container.innerHTML = `
+    <div class="flex items-center justify-between mb-4 flex-wrap gap-3">
+      <div class="flex gap-1 border-b border-hair -mb-px">${tabsHtml}</div>
+      ${canManageBlockers(state.role) ? `
+      <button id="logBlockerBtn" class="flex items-center gap-1.5 bg-blocked/10 border border-blocked text-blocked text-[13px] font-mono px-3 py-1.5 hover:bg-blocked/20 transition-colors focus-ring">
+        <span>+</span><span>Log Blocker</span>
+      </button>` : ''}
+    </div>
+    <div class="bg-panel border border-hair overflow-x-auto">
+      <table class="log-table w-full">
+        <thead>
+          <tr>
+            <th>ID</th><th>Project</th><th>Owning Team</th><th>Owner</th><th>Vendor</th>
+            <th>Description</th><th>Impacted Teams</th><th>Reported</th><th>Status</th><th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows || `<tr><td colspan="10" class="text-center text-inkdim py-8">No entries in this view.</td></tr>`}
+        </tbody>
+      </table>
+    </div>
+  `;
+
+  container.querySelectorAll('[data-blocker-tab]').forEach(btn => {
+    btn.addEventListener('click', () => { state.blockerFilter = btn.dataset.blockerTab; saveState(); render(); });
+  });
+  container.querySelectorAll('[data-open-project]').forEach(el => {
+    el.addEventListener('click', () => openDetailModal(el.dataset.openProject));
+  });
+  container.querySelectorAll('[data-resolve]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const p = PROJECTS.find(x => x.id === btn.dataset.resolve);
+      p.blocker.status = 'resolved';
+      p.blocker.resolvedDate = todayISO();
+      saveState();
+      toast('Blocker marked resolved', 'ok');
+      render();
+    });
+  });
+  const logBtn = container.querySelector('#logBlockerBtn');
+  if (logBtn) logBtn.addEventListener('click', openLogBlockerModal);
+}
+
+/* ======================= LOG BLOCKER MODAL ======================= */
+function openLogBlockerModal(){
+  const eligible = PROJECTS.filter(p => !p.archived && !(p.blocker && p.blocker.status === 'open'));
+  document.getElementById('modalTeam').textContent = 'BLOCKAGE LOG';
+  document.getElementById('modalTitle').textContent = 'Log Vendor Delay / Blocker';
+
+  const projOpts = eligible.map(p => `<option value="${p.id}">${p.id} — ${p.name}</option>`).join('');
+  const body = document.getElementById('modalBody');
+  body.innerHTML = `
+    <div class="space-y-3">
+      <div>
+        <span class="field-label">PROJECT</span>
+        <select id="lb-project" class="field-input">${projOpts || `<option value="">No eligible projects</option>`}</select>
+      </div>
+      <div>
+        <span class="field-label">DESCRIPTION</span>
+        <textarea id="lb-text" rows="2" class="field-input" placeholder="e.g. Vendor shipment delayed 3 weeks"></textarea>
+      </div>
+      <div>
+        <span class="field-label">REPORTED DATE</span>
+        <input id="lb-date" type="date" class="field-input" value="${todayISO()}">
+      </div>
+      <div>
+        <span class="field-label">IMPACTED TEAMS (cross-functional)</span>
+        <div class="grid grid-cols-2 gap-1.5 mt-1">
+          ${TEAMS.map(t => `
+          <label class="flex items-center gap-2 text-[12.5px] text-inkdim">
+            <input type="checkbox" class="lb-impacted" value="${t.id}">
+            <span>${t.name}</span>
+          </label>`).join('')}
+        </div>
+      </div>
+    </div>
+    <div id="lbError" class="hidden text-[12.5px] text-blocked font-mono"></div>
+    <div class="pt-3 border-t border-hair flex items-center justify-end gap-2">
+      <button id="lbCancel" class="font-mono text-[12.5px] px-3 py-1.5 border border-hair2 text-inkdim hover:text-ink transition-colors focus-ring">Cancel</button>
+      <button id="lbSubmit" class="font-mono text-[12.5px] px-4 py-1.5 bg-blocked/15 border border-blocked text-blocked hover:bg-blocked/25 transition-colors focus-ring">Log blocker</button>
+    </div>
+  `;
+
+  document.getElementById('lbCancel').addEventListener('click', closeModal);
+  document.getElementById('lbSubmit').addEventListener('click', () => {
+    const projectId = document.getElementById('lb-project').value;
+    const text = document.getElementById('lb-text').value.trim();
+    const date = document.getElementById('lb-date').value;
+    const errEl = document.getElementById('lbError');
+    if (!projectId || !text || !date) {
+      errEl.textContent = 'Project, description, and reported date are required.';
+      errEl.classList.remove('hidden');
+      return;
+    }
+    const impacted = Array.from(document.querySelectorAll('.lb-impacted:checked')).map(c => c.value);
+    const p = PROJECTS.find(x => x.id === projectId);
+    p.blocker = mkBlocker(text, impacted, date);
+    saveState();
+    toast('Blocker logged', 'warn');
+    closeModal();
+    state.activeTeam = 'blockers';
+    render();
+  });
+
+  document.getElementById('modalBackdrop').classList.remove('hidden');
+  document.getElementById('modalBackdrop').classList.add('flex');
+}
+
+/* ======================= RENDER: TEAM BOARD / LIST ======================= */
+function renderTeamBoard(container){
+  const team = teamById(state.activeTeam);
+  const q = state.search.trim().toLowerCase();
+  let list = PROJECTS.filter(p => p.team === team.id && !p.archived);
+  if (q) {
+    list = list.filter(p =>
+      p.name.toLowerCase().includes(q) ||
+      p.owner.toLowerCase().includes(q) ||
+      p.vendor.toLowerCase().includes(q) ||
+      p.id.toLowerCase().includes(q));
+  }
+  const archivedList = PROJECTS.filter(p => p.team === team.id && p.archived);
+
+  const viewToggle = `
+    <div class="flex border border-hair2 shrink-0">
+      <button data-view="board" data-active="${state.viewMode==='board'}" class="tab-btn font-mono text-[11.5px] px-2.5 py-1 border-e border-hair2 text-inkdim hover:text-ink transition-colors focus-ring" style="border-bottom:none;">Board</button>
+      <button data-view="list" data-active="${state.viewMode==='list'}" class="tab-btn font-mono text-[11.5px] px-2.5 py-1 text-inkdim hover:text-ink transition-colors focus-ring" style="border-bottom:none;">List</button>
+    </div>`;
+
+  const header = `
+    <div class="flex items-center justify-between mb-4 gap-3 flex-wrap">
+      <div class="text-[12px] font-mono text-inkdim">Assignees: <span class="text-ink">${team.ownersLabel}</span></div>
+      <div class="flex items-center gap-3">
+        <div class="text-[12px] font-mono text-inkdim">
+          ${ROLE_LABEL[state.role]}
+          <span class="text-inkdim/60"> · </span>
+          ${canSetAnyStatus(state.role) ? 'full CRUD control' : canAdvanceOnly(state.role) ? 'advance own tasks only' : 'read-only + archive'}
+        </div>
+        ${viewToggle}
+      </div>
+    </div>`;
+
+  let bodyHtml;
+  if (state.viewMode === 'list') {
+    bodyHtml = teamListTable(list);
+  } else {
+    const cols = STATUS_ORDER.map(key => {
+      const items = list.filter(p => p.status === key);
+      const s = STATUS[key];
+      return `
+      <div class="flex-1 min-w-[260px]">
+        <div class="flex items-center justify-between mb-2.5 px-0.5">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-${s.color} inline-block"></span>
+            <span class="text-[12.5px] font-mono text-inkdim">${s.label.toUpperCase()}</span>
+          </div>
+          <span class="text-[11px] font-mono text-inkdim">${items.length}</span>
+        </div>
+        <div class="space-y-3">
+          ${items.map(p => projectCard(p)).join('') || `<div class="text-[12px] text-inkdim border border-dashed border-hair px-3 py-6 text-center">Empty</div>`}
+        </div>
+      </div>`;
+    }).join('');
+    bodyHtml = `<div class="flex gap-6 overflow-x-auto pb-2">${cols}</div>`;
+  }
+
+  const archivedSection = archivedList.length ? `
+    <div class="mt-6 border-t border-hair pt-4">
+      <button id="toggleArchived" class="text-[12px] font-mono text-inkdim hover:text-ink flex items-center gap-1.5 focus-ring">
+        <span>${state.showArchived ? '▾' : '▸'}</span>
+        <span>Archived (${archivedList.length})</span>
+      </button>
+      ${state.showArchived ? `<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 mt-3">${archivedList.map(p => projectCard(p, true)).join('')}</div>` : ''}
+    </div>` : '';
+
+  container.innerHTML = header + bodyHtml + archivedSection;
+
+  container.querySelectorAll('[data-view]').forEach(btn => {
+    btn.addEventListener('click', () => { state.viewMode = btn.dataset.view; saveState(); render(); });
+  });
+  container.querySelectorAll('[data-open-project]').forEach(el => {
+    el.addEventListener('click', () => openDetailModal(el.dataset.openProject));
+  });
+  const toggleBtn = container.querySelector('#toggleArchived');
+  if (toggleBtn) toggleBtn.addEventListener('click', () => { state.showArchived = !state.showArchived; render(); });
+}
+
+function teamListTable(list){
+  const rows = list.map(p => {
+    const s = STATUS[p.status];
+    return `
+    <tr>
+      <td class="font-mono text-inkdim">${p.id}</td>
+      <td class="max-w-[260px]">
+        <button data-open-project="${p.id}" class="text-ink hover:text-gold transition-colors text-start focus-ring">${p.name}</button>
+      </td>
+      <td class="font-mono whitespace-nowrap">${p.owner}</td>
+      <td class="whitespace-nowrap"><span class="chip chip-gold">${p.vendor}</span></td>
+      <td><span class="font-mono text-[11px] text-${s.color} border border-${s.color} px-1.5">${s.label}</span></td>
+      <td class="whitespace-nowrap">
+        <div class="flex items-center gap-2">
+          <div class="w-16 h-1 bg-elev overflow-hidden"><div class="prog-fill bg-${s.color}" style="width:${p.progress||0}%; height:100%;"></div></div>
+          <span class="font-mono text-[11px] text-inkdim">${p.progress||0}%</span>
+        </div>
+      </td>
+      <td class="font-mono whitespace-nowrap">${p.start}</td>
+      <td class="font-mono whitespace-nowrap">${p.end}</td>
+      <td>${p.blocker && p.blocker.status==='open' ? `<span class="font-mono text-[11px] text-blocked border border-blocked px-1.5">BLOCKED</span>` : '<span class="text-inkdim">—</span>'}</td>
+    </tr>`;
+  }).join('');
+
+  return `
+    <div class="bg-panel border border-hair overflow-x-auto">
+      <table class="log-table w-full">
+        <thead>
+          <tr>
+            <th>ID</th><th>Project</th><th>Assignee</th><th>Vendor</th><th>Status</th>
+            <th>Progress</th><th>Start</th><th>Target End</th><th>Blocker</th>
+          </tr>
+        </thead>
+        <tbody>${rows || `<tr><td colspan="9" class="text-center text-inkdim py-8">No projects match.</td></tr>`}</tbody>
+      </table>
+    </div>`;
+}
+
+function projectCard(p, muted){
+  const s = STATUS[p.status];
+  const hasOpenBlocker = p.blocker && p.blocker.status === 'open';
+  return `
+  <button data-open-project="${p.id}" class="card w-full text-start bg-panel border border-hair ${muted ? 'border-s-archived opacity-70' : `border-s-${s.color}`} px-4 py-4 hover:border-hair2 hover:bg-elev/40 transition-colors focus-ring block">
+    <div class="flex items-start justify-between gap-2">
+      <span class="text-[13px] text-ink leading-snug">${p.name}</span>
+      <span class="text-[10px] font-mono text-inkdim shrink-0 mt-0.5">${p.id}</span>
+    </div>
+    <div class="flex h-1 w-full overflow-hidden bg-elev mt-2.5">
+      <div class="prog-fill bg-${s.color}" style="width:${p.progress||0}%"></div>
+    </div>
+    <div class="flex items-center gap-1.5 mt-2">
+      <span class="chip chip-gold">${p.vendor}</span>
+    </div>
+    <div class="flex items-center justify-between mt-2 text-[11px] font-mono text-inkdim">
+      <span>${p.owner}</span>
+      <span>${p.end}</span>
+    </div>
+    ${hasOpenBlocker ? `<div class="mt-2 text-[11px] text-blocked font-mono">⚠ delay flagged</div>` : ''}
+    ${muted ? `<div class="mt-2 text-[10px] font-mono text-archived">ARCHIVED</div>` : ''}
+  </button>`;
+}
+
+/* ======================= DETAIL / EDIT MODAL ======================= */
+function openDetailModal(id){
+  const p = PROJECTS.find(x => x.id === id);
+  const t = teamById(p.team);
+  document.getElementById('modalTeam').textContent = t.name.toUpperCase();
+  document.getElementById('modalTitle').textContent = p.name;
+
+  const body = document.getElementById('modalBody');
+  const editable = canEditDetails(state.role) && !p.archived;
+
+  if (editable) {
+    body.innerHTML = editForm(p, t);
+    wireEditForm(p, t);
+  } else {
+    body.innerHTML = readOnlyView(p, t);
+    wireReadOnlyView(p);
+  }
+
+  document.getElementById('modalBackdrop').classList.remove('hidden');
+  document.getElementById('modalBackdrop').classList.add('flex');
+}
+
+function blockerReadBlock(p){
+  if (!p.blocker) return '';
+  const b = p.blocker;
+  const impacted = (b.impactedTeams||[]).map(tid => `<span class="chip">${teamById(tid) ? teamById(tid).name : tid}</span>`).join(' ');
+  const openTone = b.status === 'open';
+  return `
+    <div class="${openTone ? 'bg-blocked/10 border-blocked' : 'bg-done/10 border-done'} border-s-2 px-3 py-2">
+      <div class="flex items-center justify-between">
+        <span class="text-[11px] font-mono ${openTone ? 'text-blocked' : 'text-done'}">${openTone ? 'VENDOR DELAY / BLOCKER — OPEN' : 'BLOCKER — RESOLVED'}</span>
+        <span class="text-[10.5px] font-mono text-inkdim">${openTone ? (b.reportedDate||'') : (b.resolvedDate||'')}</span>
+      </div>
+      <div class="text-sm text-ink mt-0.5">${b.text}</div>
+      ${impacted ? `<div class="flex flex-wrap gap-1 mt-1.5">${impacted}</div>` : ''}
+    </div>`;
+}
+
+function readOnlyView(p, t){
+  const s = STATUS[p.status];
+  return `
+    <div class="grid grid-cols-2 gap-4 text-sm">
+      <div><div class="field-label">OWNER</div><div class="font-mono">${p.owner}</div></div>
+      <div><div class="field-label">VENDOR / PARTNER</div><div class="font-mono">${p.vendor}</div></div>
+      <div><div class="field-label">STATUS</div><div class="font-mono text-${s.color}">${s.label}</div></div>
+      <div><div class="field-label">START</div><div class="font-mono">${p.start}</div></div>
+      <div><div class="field-label">TARGET END</div><div class="font-mono">${p.end}</div></div>
+    </div>
+    <div>
+      <div class="field-label">PROGRESS — ${p.progress||0}%</div>
+      <div class="flex h-1.5 w-full overflow-hidden bg-elev"><div class="bg-${s.color}" style="width:${p.progress||0}%"></div></div>
+    </div>
+    ${blockerReadBlock(p)}
+    <div id="modalActions" class="pt-2 border-t border-hair space-y-2"></div>
+  `;
+}
+
+function wireReadOnlyView(p){
+  const actions = document.getElementById('modalActions');
+  if (canAdvanceOnly(state.role)) {
+    const nextIdx = STATUS_ORDER.indexOf(p.status) + 1;
+    const btn = document.createElement('button');
+    if (nextIdx < STATUS_ORDER.length) {
+      const nextKey = STATUS_ORDER[nextIdx];
+      btn.className = 'w-full text-[12.5px] font-mono px-3 py-2 bg-gold/15 border border-gold text-gold hover:bg-gold/25 transition-colors focus-ring';
+      btn.textContent = `Advance to ${STATUS[nextKey].label} →`;
+      btn.addEventListener('click', () => {
+        p.status = nextKey; saveState();
+        toast('Status updated', 'ok');
+        openDetailModal(p.id); render();
+      });
+    } else {
+      btn.className = 'w-full text-[12.5px] font-mono px-3 py-2 border border-hair2 text-inkdim';
+      btn.textContent = 'Task complete';
+      btn.disabled = true;
+    }
+    actions.appendChild(btn);
+  } else if (canArchive(state.role, p) && !p.archived) {
+    const note = document.createElement('div');
+    note.className = 'text-[12px] text-inkdim font-mono border border-hair2 px-3 py-2 mb-2';
+    note.textContent = 'Read-only view — Department Manager oversight.';
+    actions.appendChild(note);
+    const abtn = document.createElement('button');
+    abtn.className = 'w-full text-[12.5px] font-mono px-3 py-2 bg-archived/15 border border-archived text-inkdim hover:text-ink transition-colors focus-ring';
+    abtn.textContent = 'Archive completed project';
+    abtn.addEventListener('click', () => {
+      p.archived = true; saveState();
+      toast('Project archived', 'ok');
+      closeModal(); render();
+    });
+    actions.appendChild(abtn);
+  } else {
+    const note = document.createElement('div');
+    note.className = 'text-[12px] text-inkdim font-mono border border-hair2 px-3 py-2';
+    note.textContent = 'Read-only view.';
+    actions.appendChild(note);
+  }
+}
+
+function editForm(p, t){
+  const ownerOpts = t.owners.map(o => `<option value="${o}" ${o===p.owner?'selected':''}>${o}</option>`).join('');
+  const vendorOpts = VENDORS.map(v => `<option value="${v}" ${v===p.vendor?'selected':''}>${v}</option>`).join('');
+  const statusOpts = STATUS_ORDER.map(k => `<option value="${k}" ${k===p.status?'selected':''}>${STATUS[k].label}</option>`).join('');
+  const hasBlocker = !!p.blocker;
+  const impactedSet = new Set(hasBlocker ? (p.blocker.impactedTeams||[]) : []);
+  return `
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div class="sm:col-span-2">
+        <span class="field-label">PROJECT NAME</span>
+        <input id="f-name" class="field-input" value="${p.name.replace(/"/g,'&quot;')}">
+      </div>
+      <div>
+        <span class="field-label">OWNER</span>
+        <select id="f-owner" class="field-input">${ownerOpts}</select>
+      </div>
+      <div>
+        <span class="field-label">VENDOR / PARTNER *</span>
+        <select id="f-vendor" class="field-input">${vendorOpts}</select>
+      </div>
+      <div>
+        <span class="field-label">STATUS</span>
+        <select id="f-status" class="field-input">${statusOpts}</select>
+      </div>
+      <div>
+        <span class="field-label">PROGRESS — <span id="f-progress-val">${p.progress||0}</span>%</span>
+        <input id="f-progress" type="range" min="0" max="100" step="5" value="${p.progress||0}" class="w-full mt-2">
+      </div>
+      <div>
+        <span class="field-label">START DATE</span>
+        <input id="f-start" type="date" class="field-input" value="${p.start}">
+      </div>
+      <div>
+        <span class="field-label">TARGET END DATE</span>
+        <input id="f-end" type="date" class="field-input" value="${p.end}">
+      </div>
+    </div>
+    <div class="border-t border-hair pt-3">
+      <label class="flex items-center gap-2 text-[12.5px] text-ink mb-2">
+        <input type="checkbox" id="f-hasBlocker" ${hasBlocker ? 'checked' : ''}>
+        <span>Report vendor delay / cross-functional blocker</span>
+      </label>
+      <div id="f-blockerFields" class="${hasBlocker ? '' : 'hidden'} space-y-3 ps-6">
+        <div>
+          <span class="field-label">DESCRIPTION</span>
+          <textarea id="f-blockerText" rows="2" class="field-input">${hasBlocker ? p.blocker.text.replace(/</g,'&lt;') : ''}</textarea>
+        </div>
+        <div>
+          <span class="field-label">REPORTED DATE</span>
+          <input id="f-blockerDate" type="date" class="field-input" value="${hasBlocker ? p.blocker.reportedDate : todayISO()}">
+        </div>
+        <div>
+          <span class="field-label">IMPACTED TEAMS</span>
+          <div class="grid grid-cols-2 gap-1.5 mt-1">
+            ${TEAMS.map(tm => `
+            <label class="flex items-center gap-2 text-[12px] text-inkdim">
+              <input type="checkbox" class="f-impacted" value="${tm.id}" ${impactedSet.has(tm.id) ? 'checked' : ''}>
+              <span>${tm.name}</span>
+            </label>`).join('')}
+          </div>
+        </div>
+        ${hasBlocker && p.blocker.status === 'resolved' ? `<div class="text-[11px] font-mono text-done">Resolved ${p.blocker.resolvedDate||''}</div>` : ''}
+      </div>
+    </div>
+    <div id="deleteConfirmRow" class="hidden bg-blocked/10 border border-blocked px-3 py-2 text-[12.5px] text-blocked flex items-center justify-between gap-3">
+      <span>Delete this project permanently?</span>
+      <div class="flex gap-2 shrink-0">
+        <button id="confirmDeleteBtn" class="font-mono px-2.5 py-1 bg-blocked text-ink border border-blocked">Delete</button>
+        <button id="cancelDeleteBtn" class="font-mono px-2.5 py-1 border border-hair2 text-inkdim">Cancel</button>
+      </div>
+    </div>
+    <div class="pt-3 border-t border-hair flex items-center justify-between gap-2 flex-wrap">
+      <div class="flex gap-2">
+        <button id="deleteBtn" class="font-mono text-[12.5px] px-3 py-1.5 border border-blocked/60 text-blocked hover:bg-blocked/10 transition-colors focus-ring">Delete</button>
+        ${p.status === 'done' ? `<button id="archiveBtn" class="font-mono text-[12.5px] px-3 py-1.5 border border-archived text-inkdim hover:text-ink transition-colors focus-ring">Archive</button>` : ''}
+      </div>
+      <button id="saveBtn" class="font-mono text-[12.5px] px-4 py-1.5 bg-gold/15 border border-gold text-gold hover:bg-gold/25 transition-colors focus-ring">Save changes</button>
+    </div>
+  `;
+}
+
+function wireEditForm(p, t){
+  const rangeEl = document.getElementById('f-progress');
+  rangeEl.addEventListener('input', () => { document.getElementById('f-progress-val').textContent = rangeEl.value; });
+
+  const hasBlockerCb = document.getElementById('f-hasBlocker');
+  const blockerFields = document.getElementById('f-blockerFields');
+  hasBlockerCb.addEventListener('change', () => {
+    blockerFields.classList.toggle('hidden', !hasBlockerCb.checked);
+  });
+
+  document.getElementById('saveBtn').addEventListener('click', () => {
+    const name = document.getElementById('f-name').value.trim();
+    if (!name) { toast('Project name is required', 'danger'); return; }
+    p.name = name;
+    p.owner = document.getElementById('f-owner').value;
+    p.vendor = document.getElementById('f-vendor').value;
+    p.status = document.getElementById('f-status').value;
+    p.start = document.getElementById('f-start').value;
+    p.end = document.getElementById('f-end').value;
+    p.progress = parseInt(document.getElementById('f-progress').value, 10);
+    if (p.status === 'done') p.progress = 100;
+
+    if (hasBlockerCb.checked) {
+      const text = document.getElementById('f-blockerText').value.trim();
+      const date = document.getElementById('f-blockerDate').value || todayISO();
+      const impacted = Array.from(document.querySelectorAll('.f-impacted:checked')).map(c => c.value);
+      if (text) {
+        if (p.blocker && p.blocker.status === 'resolved') {
+          p.blocker = mkBlocker(text, impacted, date);
+        } else {
+          p.blocker = { text, impactedTeams: impacted, reportedDate: date, status: 'open', resolvedDate: null };
+        }
+      }
+    } else {
+      p.blocker = null;
+    }
+
+    saveState();
+    toast('Project saved', 'ok');
+    closeModal(); render();
+  });
+
+  const archiveBtn = document.getElementById('archiveBtn');
+  if (archiveBtn) archiveBtn.addEventListener('click', () => {
+    p.archived = true; saveState();
+    toast('Project archived', 'ok');
+    closeModal(); render();
+  });
+
+  document.getElementById('deleteBtn').addEventListener('click', () => {
+    document.getElementById('deleteConfirmRow').classList.remove('hidden');
+  });
+  document.getElementById('cancelDeleteBtn').addEventListener('click', () => {
+    document.getElementById('deleteConfirmRow').classList.add('hidden');
+  });
+  document.getElementById('confirmDeleteBtn').addEventListener('click', () => {
+    PROJECTS = PROJECTS.filter(x => x.id !== p.id);
+    saveState();
+    toast('Project deleted', 'danger');
+    closeModal(); render();
+  });
+}
+
+/* ======================= NEW PROJECT MODAL ======================= */
+function openNewProjectModal(){
+  const defaultTeam = teamById(state.activeTeam) || TEAMS[0];
+  document.getElementById('modalTeam').textContent = 'NEW PROJECT';
+  document.getElementById('modalTitle').textContent = 'Create Project';
+
+  const teamOpts = TEAMS.map(t => `<option value="${t.id}" ${t.id===defaultTeam.id?'selected':''}>${t.name}</option>`).join('');
+  const vendorOpts = VENDORS.map(v => `<option value="${v}">${v}</option>`).join('');
+
+  const body = document.getElementById('modalBody');
+  body.innerHTML = `
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div class="sm:col-span-2">
+        <span class="field-label">TEAM</span>
+        <select id="nf-team" class="field-input">${teamOpts}</select>
+      </div>
+      <div class="sm:col-span-2">
+        <span class="field-label">PROJECT NAME</span>
+        <input id="nf-name" class="field-input" placeholder="e.g. Branch Router Replacement">
+      </div>
+      <div>
+        <span class="field-label">OWNER</span>
+        <select id="nf-owner" class="field-input"></select>
+      </div>
+      <div>
+        <span class="field-label">VENDOR / PARTNER *</span>
+        <select id="nf-vendor" class="field-input">
+          <option value="">Select vendor…</option>
+          ${vendorOpts}
+        </select>
+      </div>
+      <div>
+        <span class="field-label">INITIAL STATUS</span>
+        <select id="nf-status" class="field-input">
+          <option value="pending">Pending</option>
+          <option value="progress">In Progress</option>
+        </select>
+      </div>
+      <div></div>
+      <div>
+        <span class="field-label">START DATE</span>
+        <input id="nf-start" type="date" class="field-input">
+      </div>
+      <div>
+        <span class="field-label">TARGET END DATE</span>
+        <input id="nf-end" type="date" class="field-input">
+      </div>
+    </div>
+    <div id="nfError" class="hidden text-[12.5px] text-blocked font-mono"></div>
+    <div class="pt-3 border-t border-hair flex items-center justify-end gap-2">
+      <button id="nfCancel" class="font-mono text-[12.5px] px-3 py-1.5 border border-hair2 text-inkdim hover:text-ink transition-colors focus-ring">Cancel</button>
+      <button id="nfCreate" class="font-mono text-[12.5px] px-4 py-1.5 bg-gold/15 border border-gold text-gold hover:bg-gold/25 transition-colors focus-ring">Create project</button>
+    </div>
+  `;
+
+  const teamSelect = document.getElementById('nf-team');
+  function refreshOwners(){
+    const team = teamById(teamSelect.value);
+    document.getElementById('nf-owner').innerHTML = team.owners.map(o => `<option value="${o}">${o}</option>`).join('');
+  }
+  refreshOwners();
+  teamSelect.addEventListener('change', refreshOwners);
+
+  document.getElementById('nfCancel').addEventListener('click', closeModal);
+  document.getElementById('nfCreate').addEventListener('click', () => {
+    const name = document.getElementById('nf-name').value.trim();
+    const start = document.getElementById('nf-start').value;
+    const end = document.getElementById('nf-end').value;
+    const vendor = document.getElementById('nf-vendor').value;
+    const errEl = document.getElementById('nfError');
+    if (!name || !start || !end) {
+      errEl.textContent = 'Project name, start date, and end date are required.';
+      errEl.classList.remove('hidden');
+      return;
+    }
+    if (!vendor) {
+      errEl.textContent = 'Vendor / Partner is required for tracking purposes.';
+      errEl.classList.remove('hidden');
+      return;
+    }
+    if (new Date(end) < new Date(start)) {
+      errEl.textContent = 'Target end date must be after the start date.';
+      errEl.classList.remove('hidden');
+      return;
+    }
+    const teamId = teamSelect.value;
+    const status = document.getElementById('nf-status').value;
+    const newProject = {
+      id: nextId(teamId),
+      team: teamId,
+      name,
+      owner: document.getElementById('nf-owner').value,
+      vendor,
+      status,
+      progress: status === 'progress' ? 10 : 0,
+      start, end,
+      blocker: null,
+      archived: false,
+    };
+    PROJECTS.push(newProject);
+    saveState();
+    toast('Project created', 'ok');
+    closeModal();
+    state.activeTeam = teamId;
+    render();
+  });
+
+  document.getElementById('modalBackdrop').classList.remove('hidden');
+  document.getElementById('modalBackdrop').classList.add('flex');
+}
+
+function closeModal(){
+  document.getElementById('modalBackdrop').classList.add('hidden');
+  document.getElementById('modalBackdrop').classList.remove('flex');
+}
+
+/* ======================= NEW TEAM MODAL ======================= */
+function openNewTeamModal(){
+  document.getElementById('modalTeam').textContent = 'NEW TEAM';
+  document.getElementById('modalTitle').textContent = 'Add Operational Team';
+
+  const body = document.getElementById('modalBody');
+  body.innerHTML = `
+    <div class="space-y-3">
+      <div>
+        <span class="field-label">TEAM NAME</span>
+        <input id="nt-name" class="field-input" placeholder="e.g. Cyber Security">
+      </div>
+      <div>
+        <span class="field-label">TEAM LEAD / OWNER</span>
+        <input id="nt-lead" class="field-input" placeholder="e.g. Ahmed Farid, or Farid &amp; Samir">
+      </div>
+      <div>
+        <span class="field-label">DEPARTMENT SCOPE</span>
+        <textarea id="nt-scope" rows="3" class="field-input" placeholder="What this team owns — e.g. SOC monitoring, endpoint protection, penetration testing, incident response"></textarea>
+      </div>
+    </div>
+    <div id="ntError" class="hidden text-[12.5px] text-blocked font-mono"></div>
+    <div class="pt-3 border-t border-hair flex items-center justify-end gap-2">
+      <button id="ntCancel" class="font-mono text-[12.5px] px-3 py-1.5 border border-hair2 text-inkdim hover:text-ink transition-colors focus-ring">Cancel</button>
+      <button id="ntCreate" class="font-mono text-[12.5px] px-4 py-1.5 bg-gold/15 border border-gold text-gold hover:bg-gold/25 transition-colors focus-ring">Add team</button>
+    </div>
+  `;
+
+  document.getElementById('ntCancel').addEventListener('click', closeModal);
+  document.getElementById('ntCreate').addEventListener('click', () => {
+    const name = document.getElementById('nt-name').value.trim();
+    const leadRaw = document.getElementById('nt-lead').value.trim();
+    const scope = document.getElementById('nt-scope').value.trim();
+    const errEl = document.getElementById('ntError');
+
+    if (!name || !leadRaw || !scope) {
+      errEl.textContent = 'Team name, team lead, and department scope are all required.';
+      errEl.classList.remove('hidden');
+      return;
+    }
+    if (TEAMS.some(t => t.name.toLowerCase() === name.toLowerCase())) {
+      errEl.textContent = 'A team with that name already exists.';
+      errEl.classList.remove('hidden');
+      return;
+    }
+    const owners = parseOwnersInput(leadRaw);
+    if (!owners.length) {
+      errEl.textContent = 'Enter at least one team lead / owner name.';
+      errEl.classList.remove('hidden');
+      return;
+    }
+
+    const newTeam = {
+      id: slugifyTeamId(name),
+      name,
+      short: shortLabel(name),
+      ownersLabel: leadRaw,
+      owners,
+      focus: scope,
+      prefix: makeTeamPrefix(name),
+    };
+    TEAMS.push(newTeam);
+    saveState();
+    toast('Team added', 'ok');
+    closeModal();
+    state.activeTeam = newTeam.id;
+    render();
+  });
+
+  document.getElementById('modalBackdrop').classList.remove('hidden');
+  document.getElementById('modalBackdrop').classList.add('flex');
+}
+
+/* ======================= LIVE SYSTEM PULSE TICKER (real computed data only) ======================= */
+function renderPulseBar(){
+  const el = document.getElementById('pulseBarTrack');
+  if (!el) return;
+  const active = PROJECTS.filter(p => !p.archived);
+  const kpis = computeKpis(active);
+  const items = [
+    { label: '35 Branch & Manufacturing Sites', tone: 'sky' },
+    { label: `${kpis.total} Active Projects`, tone: 'sky' },
+    { label: `${TEAMS.length} Operational Teams`, tone: 'gold' },
+    { label: `${kpis.byStatus.done} Completed`, tone: 'done' },
+    { label: kpis.blocked ? `${kpis.blocked} Open Vendor Delay${kpis.blocked > 1 ? 's' : ''}` : 'No Open Vendor Delays', tone: kpis.blocked ? 'blocked' : 'done' },
+    { label: 'Factory Impact: 0', tone: 'done' },
+    { label: 'RBAC Enforced', tone: 'gold' },
+  ];
+  const itemsHtml = items.map(i =>
+    `<span class="pulse-bar__item"><span class="pulse-bar__dot" style="background:var(--c-${i.tone});box-shadow:0 0 6px var(--c-${i.tone});"></span>${i.label}</span>`
+  ).join('');
+  el.innerHTML = itemsHtml + itemsHtml;
+}
+
+/* ======================= MASTER RENDER ======================= */
+function render(){
+  renderNav();
+  renderTopBar();
+  renderPulseBar();
+
+  const content = document.getElementById('content');
+  content.innerHTML = '';
+  const wrap = document.createElement('div');
+  wrap.className = 'settle-in';
+  content.appendChild(wrap);
+
+  if (state.activeTeam === 'overview') renderOverview(wrap);
+  else if (state.activeTeam === 'blockers') renderBlockersPage(wrap);
+  else renderTeamBoard(wrap);
+}
+
+/* ======================= INIT & EVENTS ======================= */
+document.getElementById('roleSelect').addEventListener('change', e => { state.role = e.target.value; saveState(); render(); });
+document.getElementById('newProjectBtn').addEventListener('click', () => { if (canCreate(state.role)) openNewProjectModal(); });
+document.getElementById('exportBriefBtn').addEventListener('click', () => {
+  const ts = document.getElementById('printTimestamp');
+  if (ts) ts.textContent = 'Generated ' + new Date().toLocaleString('en-GB', { weekday:'long', year:'numeric', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit' });
+  window.print();
+});
+document.getElementById('newTeamBtn').addEventListener('click', () => { if (canManageTeams(state.role)) openNewTeamModal(); });
+document.getElementById('modalClose').addEventListener('click', closeModal);
+document.getElementById('modalBackdrop').addEventListener('click', e => { if (e.target.id === 'modalBackdrop') closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+document.getElementById('searchInput').addEventListener('input', e => {
+  state.search = e.target.value; render();
+  document.getElementById('searchInput').focus();
+});
+
+loadState();
+document.getElementById('roleSelect').value = state.role;
+render();
+tickClock();
+setInterval(tickClock, 30000);
+</script>
+</body>
+</html>
